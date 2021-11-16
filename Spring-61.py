@@ -77,10 +77,27 @@ namez = input("c,c2: compress or e,u2: extract? ")
 
 namezD = int(input("Please, enter Deep? "))
 
-Blocks2 = int(input("Please, enter Block? "))
+if namezD==15:
 
-blockDR=Blocks2
+	blockDR=400000
 
+
+elif namezD==14:
+
+	blockDR=168500
+	
+elif namezD==13:
+	
+	blockDR=76010
+	
+elif namezD==12:
+	
+	blockDR=38000
+
+else:
+	blockDR = int(input("Please, enter block? "))
+	
+	
 
 f = open("PI_10M.txt", "r")
 PI=f.read()
@@ -764,8 +781,8 @@ class compression:
                                         lenf=len(szx)
                                         
                                             
+                                       
                                         
-                                        xc=bitc-lenf
                                             
                                         z=0
                                         if xc!=0 and lenf!=bitc:
@@ -778,6 +795,7 @@ class compression:
                                         szxw1=szx
                                         
                                         lenf=len(szx)
+                                        
                                         
                                        
                                         szx=""  
@@ -862,10 +880,11 @@ class compression:
                                     szx=bin(cvz)[2:]
                                     cvz=0
                                     lenf=len(szx)
+                                    
                                    
                                    
                                     
-                                    
+                                    print(lenf)
                                     
                                     if lenfg>0:
                                         if lenf>blockD:
