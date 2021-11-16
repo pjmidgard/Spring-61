@@ -66,7 +66,7 @@ numberschangenotexist = []
 numbers = []
 
 
-Deep=168500//14
+
 
 
 lenf=0
@@ -77,7 +77,9 @@ namez = input("c,c2: compress or e,u2: extract? ")
 
 namezD = int(input("Please, enter Deep? "))
 
-blockDR=Deep*namezD
+Blocks2 = int(input("Please, enter Block? "))
+
+blockDR=Blocks2
 
 
 f = open("PI_10M.txt", "r")
