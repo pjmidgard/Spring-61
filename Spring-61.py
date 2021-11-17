@@ -109,7 +109,7 @@ elif namezD==15:
 
 elif namezD==14:
 
-	blockDR=168500
+	blockDR=268500
 	
 elif namezD==13:
 	
