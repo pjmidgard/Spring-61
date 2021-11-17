@@ -77,9 +77,34 @@ namez = input("c,c2: compress or e,u2: extract? ")
 
 namezD = int(input("Please, enter Deep? "))
 
-if namezD==15:
+if namezD==21:
 
-	blockDR=400000
+	blockDR=16850000
+
+elif namezD==20:
+
+	blockDR=76010000
+	
+elif namezD==19:
+
+	blockDR=38000000
+	
+
+elif namezD==18:
+
+	blockDR=1825000
+
+elif namezD==17:
+
+	blockDR=1685000
+
+elif namezD==16:
+
+	blockDR=760100
+
+elif namezD==15:
+
+	blockDR=380000
 
 
 elif namezD==14:
@@ -93,6 +118,15 @@ elif namezD==13:
 elif namezD==12:
 	
 	blockDR=38000
+
+elif namezD==11:
+	
+	blockDR=18250
+
+
+elif namezD==7:
+    
+	blockDR=28
 
 else:
 	blockDR = int(input("Please, enter block? "))
