@@ -133,11 +133,23 @@ else:
 	blockDR = int(input("Please, enter block? "))
 
 
-namezDB = input("Please, enter B for blocks or else? ")
+namezDB = input("Please, enter block for blocks or else? ")
 
-if namezDB=="B":
+if namezDB=="block":
 
     blockDR = int(input("Please, enter block? "))
+
+    
+namezDB = input("Please, enter bits for bits or else? ")
+
+if namezDB=="bits":
+
+    bits = int(input("Please, enter bits? "))
+
+if namezDB!="bits":
+    bits = 1
+
+
 	
 	
 
@@ -317,7 +329,7 @@ class compression:
                                 countraz=0
                                 
                                 blockD=(blockDR*namezD)
-                                blockDE=(blockDR*namezD)-namezD-1
+                                blockDE=(blockDR*namezD)-namezD-bits
                                 BlockF=blockDR
                                 namezD2=(2**namezD)-1
             
@@ -648,7 +660,7 @@ class compression:
 
 
                         
-                        blockD=(blockDR*namezD)-namezD-1
+                        blockD=(blockDR*namezD)-namezD-bits
                         block=blockDR
                         blockw=block-1
                         blockw1=2**namezD
