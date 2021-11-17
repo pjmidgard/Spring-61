@@ -75,7 +75,7 @@ szx=""
 wer=""
 namez = input("c,c2: compress or e,u2: extract? ")
 
-namezD = int(input("Please, enter Deep? "))
+namezD = int(input("Please, enter the calculus? "))
 
 
 if namezD==21:
