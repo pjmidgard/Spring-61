@@ -77,6 +77,7 @@ namez = input("c,c2: compress or e,u2: extract? ")
 
 namezD = int(input("Please, enter Deep? "))
 
+
 if namezD==21:
 
 	blockDR=16850000
@@ -92,7 +93,7 @@ elif namezD==19:
 
 elif namezD==18:
 
-	blockDR=1825000
+	blockDR=2825000
 
 elif namezD==17:
 
@@ -109,7 +110,7 @@ elif namezD==15:
 
 elif namezD==14:
 
-	blockDR=268500
+	blockDR=168500
 	
 elif namezD==13:
 	
@@ -130,6 +131,13 @@ elif namezD==7:
 
 else:
 	blockDR = int(input("Please, enter block? "))
+
+
+namezDB = input("Please, enter B for blocks or else? ")
+
+if namezDB=="B":
+
+    blockDR = int(input("Please, enter block? "))
 	
 	
 
@@ -781,6 +789,7 @@ class compression:
                                    
                                     acvb=lenfg-1
                                     notexist=k[0]
+                                    print(notexist)
                                     
                                     
                                    
