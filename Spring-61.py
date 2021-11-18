@@ -332,6 +332,42 @@ class compression:
                                             z=z+1
                                           
                                     for byte in sda:
+                                        if sda[0:8]=="01111111":
+                                            
+                                            sda=sda[8:]
+                                            wer=sda
+                                            n = int(wer, 2)
+                                    
+                                            qqwslenf=len(wer)
+                                            qqwslenf=(qqwslenf/8)*2
+                                            qqwslenf=str(qqwslenf)
+                                            qqwslenf="%0"+qqwslenf+"x"
+                                                
+                                               
+                                                            
+                                            jl=binascii.unhexlify(qqwslenf % n)
+                                            sssssw=len(jl)
+                                            data=jl
+                                            qqqwz=qqqwz+1
+                                            szxzzza=""
+                                            szxzs=""
+                                           
+                                            
+                                            blockw=4
+                                            blockw1=3
+                                        
+                                            #print(sssssw)
+                                                
+                                            wer=""
+                                            
+                              
+                                            assx=10
+                                            
+                                            f2.write(jl)
+                                            x2 = time()
+                                            x3 = x2-x
+                                            return print(x3)
+
                                         if sda[0:1]=="1":
                                             sda=sda[1:]
                                         elif sda[0:2]=="01":
