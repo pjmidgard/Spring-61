@@ -75,79 +75,7 @@ szx=""
 wer=""
 namez = input("c,c2: compress or e,u2: extract? ")
 
-namezD = int(input("Please, enter the calculus? "))
 
-
-if namezD==21:
-
-	blockDR=16850000
-
-elif namezD==20:
-
-	blockDR=76010000
-	
-elif namezD==19:
-
-	blockDR=38000000
-	
-
-elif namezD==18:
-
-	blockDR=2825000
-
-elif namezD==17:
-
-	blockDR=1685000
-
-elif namezD==16:
-
-	blockDR=760100
-
-elif namezD==15:
-
-	blockDR=380000
-
-
-elif namezD==14:
-
-	blockDR=168500
-	
-elif namezD==13:
-	
-	blockDR=76010
-	
-elif namezD==12:
-	
-	blockDR=38000
-
-elif namezD==11:
-	
-	blockDR=18250
-
-
-elif namezD==7:
-    
-	blockDR=28
-
-else:
-	blockDR = int(input("Please, enter block? "))
-
-
-namezDB = input("Please, enter block for blocks or else? ")
-
-if namezDB=="block":
-
-    blockDR = int(input("Please, enter block? "))
-
-    
-namezDB = input("Please, enter bits for bits or else? ")
-
-if namezDB=="bits":
-
-    bits = int(input("Please, enter bits? "))
-
-if namezDB!="bits":
-    bits = 1
 
 
 	
@@ -175,8 +103,73 @@ class compression:
                         blockw1=4
                         nameas=name
                         nac=len(nameas)
-                        if nameas[nac-8:nac]==".bin.bin":
-                            nameas=nameas[0:nac-8]
+                        if nameas[nac-10:nac]=="17.bin.bin":
+                            namezD=int(nameas[nac-10:nac-8])
+                            nameas=nameas[0:nac-10]
+
+                        elif nameas[nac-9:nac]=="7.bin.bin" and nameas[nac-10:nac]!="17.bin.bin":
+                            namezD=int(nameas[nac-9:nac-8])
+                            nameas=nameas[0:nac-9]
+
+                        else:
+                            namezD=int(nameas[nac-10:nac-8])
+                            nameas=nameas[0:nac-10]
+
+                        
+                        
+                        if namezD==21:
+
+                                blockDR=16850000
+
+                        elif namezD==20:
+
+                                blockDR=76010000
+                                
+                        elif namezD==19:
+
+                                blockDR=38000000
+                                
+
+                        elif namezD==18:
+
+                                blockDR=3125000
+
+                        elif namezD==17:
+
+                                blockDR=1685000
+
+                        elif namezD==16:
+
+                                blockDR=760100
+
+                        elif namezD==15:
+
+                                blockDR=380000
+
+
+                        elif namezD==14:
+
+                                blockDR=168500
+                                
+                        elif namezD==13:
+                                
+                                blockDR=76010
+                                
+                        elif namezD==12:
+                                
+                                blockDR=38000
+
+                        elif namezD==11:
+                                
+                                blockDR=18250
+
+
+                        elif namezD==7:
+                            
+                                blockDR=28
+    
+
+                          
                         countraz=0
                         C=0
                         s=""
@@ -329,7 +322,7 @@ class compression:
                                 countraz=0
                                 
                                 blockD=(blockDR*namezD)
-                                blockDE=(blockDR*namezD)-namezD-bits
+                                blockDE=(blockDR*namezD)-namezD-1
                                 BlockF=blockDR
                                 namezD2=(2**namezD)-1
             
@@ -351,42 +344,6 @@ class compression:
                                             z=z+1
                                           
                                     for byte in sda:
-
-                                        if sda[0:8]=="01111111":
-                                            
-                                            sda=sda[8:]
-                                            wer=sda
-                                            n = int(wer, 2)
-                                    
-                                            qqwslenf=len(wer)
-                                            qqwslenf=(qqwslenf/8)*2
-                                            qqwslenf=str(qqwslenf)
-                                            qqwslenf="%0"+qqwslenf+"x"
-                                                
-                                               
-                                                            
-                                            jl=binascii.unhexlify(qqwslenf % n)
-                                            sssssw=len(jl)
-                                            data=jl
-                                            qqqwz=qqqwz+1
-                                            szxzzza=""
-                                            szxzs=""
-                                           
-                                            
-                                            blockw=4
-                                            blockw1=3
-                                        
-                                            #print(sssssw)
-                                                
-                                            wer=""
-                                            
-                              
-                                            assx=10
-                                            
-                                            f2.write(jl)
-                                            x2 = time()
-                                            x3 = x2-x
-                                            return print(x3) 
                                         if sda[0:1]=="1":
                                             sda=sda[1:]
                                         elif sda[0:2]=="01":
@@ -428,15 +385,6 @@ class compression:
             
                                         elif sda[sdalong-8:sdalong]=="10000000":
                                             sda=sda[:sdalong-8]
-
-
-                                    
-
-                                            
-
-                                        
-
-
             
                                             
                                         sdad=len(sda)
@@ -484,7 +432,7 @@ class compression:
                                                 assx=10
                                         
                                                 f2.write(jl)
-                                                
+                                                raise SystemExit
                                                   
                                             el=eo
                                             eo=eo+namezD
@@ -546,6 +494,7 @@ class compression:
                                                    
                                             wers=""
                                         
+                                        
 
 
                                     wer=wer+sda[C:]
@@ -594,6 +543,65 @@ class compression:
     
     def Areac2(self):
                     if namez=="c2":
+
+                        namezD = int(input("Please, enter Deep? "))
+
+
+                        if namezD==21:
+
+                                blockDR=16850000
+
+                        elif namezD==20:
+
+                                blockDR=76010000
+                                
+                        elif namezD==19:
+
+                                blockDR=38000000
+                                
+
+                        elif namezD==18:
+
+                                blockDR=3125000
+
+                        elif namezD==17:
+
+                                blockDR=1685000
+
+                        elif namezD==16:
+
+                                blockDR=760100
+
+                        elif namezD==15:
+
+                                blockDR=380000
+
+
+                        elif namezD==14:
+
+                                blockDR=168500
+                                
+                        elif namezD==13:
+                                
+                                blockDR=76010
+                                
+                        elif namezD==12:
+                                
+                                blockDR=38000
+
+                        elif namezD==11:
+                                
+                                blockDR=18250
+
+
+                        elif namezD==7:
+                            
+                                blockDR=28
+
+                        else:
+                            raise SystemExit
+                            
+
                         x=0
                         x1=0
                         x2=0
@@ -660,7 +668,7 @@ class compression:
 
 
                         
-                        blockD=(blockDR*namezD)-namezD-bits
+                        blockD=(blockDR*namezD)-namezD-1
                         block=blockDR
                         blockw=block-1
                         blockw1=2**namezD
@@ -690,8 +698,10 @@ class compression:
                         numberschangenotexist = []
                         numbers = []
                             
-                        
-                        namea=name+".bin.bin"
+                        namezDE=str(namezD)
+                        namea=name+namezDE+".bin.bin"
+
+                       
                         namem=name+"/"
             
                         nameas=name
