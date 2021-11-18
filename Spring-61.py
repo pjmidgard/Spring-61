@@ -955,12 +955,7 @@ class compression:
                                     szx=bin(cvz)[2:]
                                     cvz=0
                                     lenf=len(szx)
-                                    
-                                   
-                                   
-                                    
-                                    print(lenf)
-                                    
+                                 
                                     if lenfg>0:
                                         if lenf>blockD:
                                             wer="01111111"+sda
