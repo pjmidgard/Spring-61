@@ -167,6 +167,7 @@ class compression:
                         elif namezD==7:
                             
                                 blockDR=28
+
     
 
                           
