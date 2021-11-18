@@ -116,21 +116,8 @@ class compression:
                             nameas=nameas[0:nac-10]
 
                         
-                        
-                        if namezD==21:
-
-                                blockDR=16850000
-
-                        elif namezD==20:
-
-                                blockDR=76010000
-                                
-                        elif namezD==19:
-
-                                blockDR=8000000
-                                
-
-                        elif namezD==18:
+                     
+                        if namezD==18:
 
                                 blockDR=3125000
 
@@ -547,21 +534,7 @@ class compression:
 
                         namezD = int(input("Please, enter Deep? "))
 
-
-                        if namezD==21:
-
-                                blockDR=16850000
-
-                        elif namezD==20:
-
-                                blockDR=76010000
-                                
-                        elif namezD==19:
-
-                                blockDR=8000000
-                                
-
-                        elif namezD==18:
+                        if namezD==18:
 
                                 blockDR=3125000
 
