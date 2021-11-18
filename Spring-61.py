@@ -512,7 +512,7 @@ class compression:
                                     n = int(wer, 2)
                                     
                                     qqwslenf=len(wer)
-                                    qqwslenf=(qqwslenf/8)*2
+                                    qqwslenf=(qqwslenf//8)*2
                                     qqwslenf=str(qqwslenf)
                                     qqwslenf="%0"+qqwslenf+"x"
                                         
@@ -558,7 +558,7 @@ class compression:
                                 
                         elif namezD==19:
 
-                                blockDR=38000000
+                                blockDR=8000000
                                 
 
                         elif namezD==18:
