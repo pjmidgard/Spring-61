@@ -127,7 +127,7 @@ class compression:
                                 
                         elif namezD==19:
 
-                                blockDR=38000000
+                                blockDR=8000000
                                 
 
                         elif namezD==18:
