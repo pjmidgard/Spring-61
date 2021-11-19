@@ -5,20 +5,11 @@ import os
 import binascii
 import math
 
-
-
-
 lenf=0
 name=""
 szx=""
 wer=""
 namez = input("c,c2: compress or e,u2: extract? ")
-
-
-
-
-	
-	
 
 f = open("PI_10M.txt", "r")
 PI=f.read()
