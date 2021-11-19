@@ -821,7 +821,7 @@ class compression:
                                    
                                     acvb=lenfg-1
                                     notexist=k[0]
-                                    print(notexist)
+                                  
                                     
                                     
                                    
