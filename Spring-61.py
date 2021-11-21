@@ -312,7 +312,7 @@ class compression:
                                     while ei<lenf6F:
 
                                            sda9=sda3[ei:ei+1]
-                                           sda12=sda3[ei:ei+2]
+                                           sda12=sda3[ei:ei+3]
                                            sda18=sda3[ei:ei+34]
                                            lenf2=len(sda18)
 
@@ -325,12 +325,62 @@ class compression:
                                                          sda17=sda17+sda10
                                                          ei=ei+33
 
+                                           if sda12[0:3]=="100":
 
-                                           if sda12[0:2]=="10":
+                                                         sda10=sda3[ei:ei+18]
 
-                                                         sda10=sda3[ei:ei+22]
+                                                         sda10=sda10[3:]
 
-                                                         sda10=sda10[2:]
+                                                         lenf1=len(sda10)
+
+                                                         N1 = int(sda10, 2)
+
+                                                         lenf2=len(sda10)
+                                                         
+                                                           
+
+                                                           
+
+                                                         #32 bit 33 bit 31 bit
+
+                                                         #print(sda10)
+                                                         PI_take=str(PI)
+
+                                                        
+
+                                                        
+                                                         N3 = PI_take[N1:N1+3]
+                                                         N3=int(N3)
+                                                         
+                                                         N4=bin(N3)[2:]
+                                                         
+                                                         N7=len(N4)
+                                                         
+                                                         lenf=len(N4)
+                                                                 
+                                                         szx2=""
+                                                         xc=32-lenf
+                                                         z=0
+                                                         if xc!=0:
+                                                               if xc!=32:
+                                                                      while z<xc:
+                                                                             szx2="0"+szx2
+                                                                             z=z+1
+                                                         
+                                                        
+                                                         sda17=sda17+szx2+N4
+                                                         ei=ei+18
+
+
+                                           if sda12[0:3]=="101":
+
+                                                          
+
+                                                         sda10=sda3[ei:ei+23]
+
+                                                         sda10=sda10[3:]
+
+                                                         
 
                                                          lenf1=len(sda10)
 
@@ -370,7 +420,7 @@ class compression:
                                                          
                                                         
                                                          sda17=sda17+szx2+N4
-                                                         ei=ei+22
+                                                         ei=ei+23
                                                          
 
                                            
@@ -491,7 +541,22 @@ class compression:
                                           
                                         
                                           
+                                           elif lenf2==32  and N7==3 and N3>=0:
+                                                         N4=bin(N3)[2:]
+                                                         
 
+                                                         lenf=len(N4)
+                                                                 
+                                                         szx2=""
+                                                         xc=15-lenf
+                                                         z=0
+                                                         if xc!=0:
+                                                               if xc!=15:
+                                                                      while z<xc:
+                                                                             szx2="0"+szx2
+                                                                             z=z+1
+                                                         
+                                                         sda17=sda17+"100"+szx2+N4
                                                
                                                          
                                            elif lenf2==32  and N7==5 and N3>=0:
@@ -509,7 +574,7 @@ class compression:
                                                                       while z<xc:
                                                                              szx2="0"+szx2
                                                                              z=z+1
-                                                         sda17=sda17+"10"+szx2+N4
+                                                         sda17=sda17+"101"+szx2+N4
 
 
                                            else:
