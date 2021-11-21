@@ -10,8 +10,8 @@ name=""
 szx=""
 wer=""
 namez = input("c compress or e extract? ")
-Deep = int(input("Please, Enter Deep "))
-Spin2 = int(input("Please, Enter Spin "))
+Deep = 1
+Spin2 = 30
 
 f = open("PI_10M.txt", "r")
 PI=f.read()
