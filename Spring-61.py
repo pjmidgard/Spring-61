@@ -11,6 +11,7 @@ szx=""
 wer=""
 namez = input("c compress or e extract? ")
 Deep = int(input("Please, Enter Deep "))
+Spin2 = int(input("Please, Enter Spin "))
 
 f = open("PI_10M.txt", "r")
 PI=f.read()
@@ -312,6 +313,8 @@ class compression:
 
                                     ei=0
 
+                                    Spin=0
+
                                     while ei<lenf6F:
 
                                            sda9=sda3[ei:ei+1]
@@ -319,16 +322,25 @@ class compression:
                                            sda18=sda3[ei:ei+34]
                                            lenf2=len(sda18)
 
+
+                                           if Spin==Spin2:
+                                               sda10=sda3[ei:ei+32]
+                                               sda17=sda17+sda10
+                                               lenf3=len(sda10)
+                                               ei=ei+lenf3
+                                               
+
                                            
                                            
-                                           
-                                           if sda12[0:1]=="0":
+                                        
+                                           if sda12[0:1]=="0" and Spin<Spi2:
                                                          sda10=sda3[ei:ei+33]
                                                          sda10=sda10[1:]
                                                          sda17=sda17+sda10
                                                          ei=ei+33
+                                                         Spin==Spin+1
 
-                                           if sda12[0:3]=="100":
+                                           if sda12[0:3]=="100" and Spin<Spin2:
 
                                                          sda10=sda3[ei:ei+18]
 
@@ -375,7 +387,7 @@ class compression:
                                                          ei=ei+18
 
 
-                                           if sda12[0:3]=="101":
+                                           if sda12[0:3]=="101" and Spin<Spin2:
 
                                                           
 
@@ -429,7 +441,7 @@ class compression:
                                            
                                         
                                                          
-                                           if sda12[0:2]=="11":
+                                           if sda12[0:2]=="11" and Spin<Spin2:
 
                                                          sda10=sda3[ei:ei+31]
 
@@ -509,6 +521,7 @@ class compression:
                                     lenf6F=lenf6
 
                                     ei=0
+                                    Spin=0
 
                                     while ei<lenf6F:
 
@@ -533,78 +546,80 @@ class compression:
                                            
                                            N7=len(N1)
                                            
+                                                   
+                                           if Spin<Spin:
 
-
-
-                                           if lenf2!=32:
+                                               if lenf2!=32:
                                                   sda17=sda17+"0"+sda10
-
-
-                                         
-                                                  
-                                          
+                                           
                                         
-                                          
-                                           elif lenf2==32  and N7==3 and N3>=0:
-                                                         N4=bin(N3)[2:]
-                                                         
+                                              
+                                               elif lenf2==32  and N7==3 and N3>=0:
+                                                             N4=bin(N3)[2:]
+                                                             
 
-                                                         lenf=len(N4)
-                                                                 
-                                                         szx2=""
-                                                         xc=15-lenf
-                                                         z=0
-                                                         if xc!=0:
-                                                               if xc!=15:
-                                                                      while z<xc:
-                                                                             szx2="0"+szx2
-                                                                             z=z+1
-                                                         
-                                                         sda17=sda17+"100"+szx2+N4
+                                                             lenf=len(N4)
+                                                                     
+                                                             szx2=""
+                                                             xc=15-lenf
+                                                             z=0
+                                                             if xc!=0:
+                                                                   if xc!=15:
+                                                                          while z<xc:
+                                                                                 szx2="0"+szx2
+                                                                                 z=z+1
+                                                             
+                                                             sda17=sda17+"100"+szx2+N4
+                                                   
+                                                             
+                                               elif lenf2==32  and N7==5 and N3>=0:
+
+                                                             N4=bin(N3)[2:]
+                                                             
+
+                                                             lenf=len(N4)
+                                                                     
+                                                             szx2=""
+                                                             xc=20-lenf
+                                                             z=0
+                                                             if xc!=0:
+                                                                   if xc!=20:
+                                                                          while z<xc:
+                                                                                 szx2="0"+szx2
+                                                                                 z=z+1
+                                                             sda17=sda17+"101"+szx2+N4
+
+
                                                
-                                                         
-                                           elif lenf2==32  and N7==5 and N3>=0:
 
-                                                         N4=bin(N3)[2:]
-                                                         
+                                               elif sda10[0:2]==sda10[6:8] and sda10[0:2]==sda10[10:12]:
+                                                            
+                                                            
+                                                            sda10=sda10[2:10]+sda10[12:]
+                                                            
+                                                    
 
-                                                         lenf=len(N4)
-                                                                 
-                                                         szx2=""
-                                                         xc=20-lenf
-                                                         z=0
-                                                         if xc!=0:
-                                                               if xc!=20:
-                                                                      while z<xc:
-                                                                             szx2="0"+szx2
-                                                                             z=z+1
-                                                         sda17=sda17+"101"+szx2+N4
-
-
-                                           else:
-
-                                               if sda10[0:2]==sda10[6:8] and sda10[0:2]==sda10[10:12]:
-                                                        
-                                                        
-                                                        sda10=sda10[2:10]+sda10[12:]
-                                                        
-                                                
-
-                                                        sda17=sda17+"110"+sda10
+                                                            sda17=sda17+"110"+sda10
 
 
                                                elif sda10[0:2]==sda10[6:8][::-1] and sda10[0:2]==sda10[10:12]:
-                                                        
-                                                        
-                                                        sda10=sda10[2:10]+sda10[12:]
-                                                        
-                                                
+                                                            
+                                                            
+                                                            sda10=sda10[2:10]+sda10[12:]
+                                                            
+                                                    
 
-                                                        sda17=sda17+"111"+sda10
+                                                            sda17=sda17+"111"+sda10
                                                else:
+                                                        
+                                                           
                                                         sda17=sda17+"0"+sda10
+                                                        Spin=Spin+1
 
-                                                         
+
+                                           elif Spin==Spin2:
+                                               sda17=sda17+sda10
+                                               
 
 
                                            ei=ei+32
