@@ -319,61 +319,13 @@ class compression:
                                            
                                            
                                            
-                                           if sda12[0:2]=="00":
-                                                         sda10=sda3[ei:ei+34]
-                                                         sda10=sda10[2:]
+                                           if sda12[0:1]=="0":
+                                                         sda10=sda3[ei:ei+33]
+                                                         sda10=sda10[1:]
                                                          sda17=sda17+sda10
-                                                         ei=ei+34
+                                                         ei=ei+33
 
 
-                                           if sda12[0:2]=="01":
-
-                                                         sda10=sda3[ei:ei+17]
-
-                                                         sda10=sda10[2:]
-
-                                                         lenf1=len(sda10)
-
-                                                         N1 = int(sda10, 2)
-
-                                                         lenf2=len(sda10)
-                                                         
-                                                           
-
-                                                           
-
-                                                         #32 bit 33 bit 31 bit
-
-                                                         #print(sda10)
-                                                         PI_take=str(PI)
-
-                                                        
-
-                                                        
-                                                         N3 = PI_take[N1:N1+3]
-                                                         N3=int(N3)
-                                                         
-                                                         N4=bin(N3)[2:]
-                                                         
-                                                         N7=len(N4)
-                                                         
-                                                         lenf=len(N4)
-                                                                 
-                                                         szx2=""
-                                                         xc=32-lenf
-                                                         z=0
-                                                         if xc!=0:
-                                                               if xc!=32:
-                                                                      while z<xc:
-                                                                             szx2="0"+szx2
-                                                                             z=z+1
-                                                         
-                                                        
-                                                         sda17=sda17+szx2+N4
-                                                         ei=ei+17
-                                                         
-                                         
-                                                         
                                            if sda12[0:2]=="10":
 
                                                          sda10=sda3[ei:ei+22]
@@ -531,29 +483,14 @@ class compression:
 
 
                                            if lenf2!=32:
-                                                  sda17=sda17+"00"+sda10
+                                                  sda17=sda17+"0"+sda10
 
 
                                          
                                                   
                                           
                                         
-                                           elif lenf2==32  and N7==3 and N3>=0:
-                                                         N4=bin(N3)[2:]
-                                                         
-
-                                                         lenf=len(N4)
-                                                                 
-                                                         szx2=""
-                                                         xc=15-lenf
-                                                         z=0
-                                                         if xc!=0:
-                                                               if xc!=15:
-                                                                      while z<xc:
-                                                                             szx2="0"+szx2
-                                                                             z=z+1
-                                                         
-                                                         sda17=sda17+"01"+szx2+N4
+                                          
 
                                                
                                                          
@@ -576,8 +513,10 @@ class compression:
 
 
                                            else:
+
+                                               #RLE
                                          
-                                               if sda10[0:2]==sda10[6:8] and sda10[0:2]==sda10[10:12]:#RLE
+                                               if sda10[0:2]==sda10[6:8] and sda10[0:2]==sda10[10:12]:
                                                         
                                                         
                                                         sda10=sda10[2:10]+sda10[12:]
@@ -587,7 +526,7 @@ class compression:
                                                         sda17=sda17+"110"+sda10
 
 
-                                               elif sda10[0:2]==sda10[6:8][::-1] and sda10[0:2]==sda10[10:12]:#RLE
+                                               elif sda10[0:2]==sda10[6:8][::-1] and sda10[0:2]==sda10[10:12]:
                                                         
                                                         
                                                         sda10=sda10[2:10]+sda10[12:]
@@ -596,7 +535,7 @@ class compression:
 
                                                         sda17=sda17+"111"+sda10
                                                else:
-                                                        sda17=sda17+"00"+sda10
+                                                        sda17=sda17+"0"+sda10
 
                                                          
 
