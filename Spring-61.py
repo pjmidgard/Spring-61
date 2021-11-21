@@ -426,14 +426,14 @@ class compression:
                                                          
                                            if sda12[0:2]=="11":
 
-                                                         sda10=sda3[ei:ei+32]
+                                                         sda10=sda3[ei:ei+30]
 
                                                          sda10=sda10[2:]
 
-                                                         sda10=sda10[5:6]+sda10[0:9]+sda10[5:6]+sda10[9:]
+                                                         sda10=sda10[4:6]+sda10[0:8]+sda10[4:6]+sda10[8:]
                                                         
                                                          sda17=sda17+sda10
-                                                         ei=ei+32
+                                                         ei=ei+30
                                        
 
                                                          
@@ -569,15 +569,11 @@ class compression:
 
                                            else:
                                          
-                                                  
-                                          
-                                        
-                                          
-
-                                               if sda10[0:1]==sda10[6:7] and sda10[0:1]==sda10[10:11]:#RLE
+                                               if sda10[0:2]==sda10[6:8] and sda10[0:2]==sda10[10:12]:#RLE
                                                         
                                                         
-                                                        sda10=sda10[1:10]+sda10[11:]
+                                                        sda10=sda10[2:10]+sda10[12:]
+                                                        
                                                 
 
                                                         sda17=sda17+"11"+sda10
