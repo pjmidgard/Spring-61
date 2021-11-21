@@ -10,6 +10,7 @@ name=""
 szx=""
 wer=""
 namez = input("c compress or e extract? ")
+Deep = int(input("Please, Enter Deep "))
 
 f = open("PI_10M.txt", "r")
 PI=f.read()
@@ -456,7 +457,7 @@ class compression:
                                     Circle_times2=Circle_times2+1
                                     
                                     
-                                    if   Circle_times2==2:
+                                    if   Circle_times2==Deep:
                                          #print(sda17)
                                        
                                          n = int(sda17, 2)
@@ -639,7 +640,7 @@ class compression:
                                         #print(Circle_times2)
                                         
                                         
-                                        if  Circle_times2==2:
+                                        if  Circle_times2==Deep:
                                             #print(lenf6-1)
 
                                             
