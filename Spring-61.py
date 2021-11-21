@@ -268,6 +268,8 @@ class compression:
 
                                             sda2=sda2[1:lenf5-1]
 
+                                    g=0
+
                                     sda3=sda2
 
                                     lenf6=len(sda3)
@@ -450,8 +452,9 @@ class compression:
 
                                            
                                            
-                                                  
+                                    sda2=sda17
                                     Circle_times2=Circle_times2+1
+                                    
                                     
                                     if   Circle_times2==2:
                                          #print(sda17)
