@@ -582,8 +582,6 @@ class compression:
 
                                            else:
 
-                                               #RLE
-                                         
                                                if sda10[0:2]==sda10[6:8] and sda10[0:2]==sda10[10:12]:
                                                         
                                                         
