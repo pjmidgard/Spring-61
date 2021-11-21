@@ -453,7 +453,7 @@ class compression:
                                                   
                                     Circle_times2=Circle_times2+1
                                     
-                                    if   Circle_times2==1:
+                                    if   Circle_times2==2:
                                          #print(sda17)
                                        
                                          n = int(sda17, 2)
@@ -638,7 +638,7 @@ class compression:
                                         #print(Circle_times2)
                                         
                                         
-                                        if  Circle_times2==1:
+                                        if  Circle_times2==2:
                                             #print(lenf6-1)
 
                                             
