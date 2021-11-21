@@ -209,9 +209,7 @@ class compression:
                                    
                                     lenf5=len(sda3)
                                     
-                                    Spin3=0
-
-                                    Spin2=0
+                                    
                                     #Extract
                                     
                                     
@@ -333,12 +331,12 @@ class compression:
                                            
                                            
                                         
-                                           if sda12[0:1]=="0" and Spin<Spi2:
+                                           if sda12[0:1]=="0" and Spin<Spin2:
                                                          sda10=sda3[ei:ei+33]
                                                          sda10=sda10[1:]
                                                          sda17=sda17+sda10
                                                          ei=ei+33
-                                                         Spin==Spin+1
+                                                         Spin=Spin+1
 
                                            if sda12[0:3]=="100" and Spin<Spin2:
 
@@ -547,7 +545,7 @@ class compression:
                                            N7=len(N1)
                                            
                                                    
-                                           if Spin<Spin:
+                                           if Spin<Spin2:
 
                                                if lenf2!=32:
                                                   sda17=sda17+"0"+sda10
