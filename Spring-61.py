@@ -549,7 +549,7 @@ class compression:
                                                    
                                             wers=""
                                         
-                                    wer=wer+sda[C:]
+                                   
                                    
                                     lenf=len(wer)
                                     xc=8-lenf%8
