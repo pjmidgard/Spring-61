@@ -479,6 +479,7 @@ class compression:
                                                     bnkw=bnkw-1
                                                         
                                                 cvz=cvz+ghjd
+                                                el=el+namezD]
                                             szxw2=""   
                                             for p in range(blockw+2):
                                                 cvz2=cvz
