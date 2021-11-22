@@ -549,8 +549,6 @@ class compression:
                                                    
                                             wers=""
                                         
-                                   
-                                   
                                     lenf=len(wer)
                                     xc=8-lenf%8
                                     z=0
