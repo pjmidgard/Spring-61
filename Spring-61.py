@@ -145,9 +145,6 @@ class compression:
                             
                                 blockDR=28
 
-    
-
-                          
                         countraz=0
                         C=0
                         s=""
@@ -304,11 +301,6 @@ class compression:
                                 BlockF=blockDR
                                 namezD2=(2**namezD)-1
             
-            
-                                
-                               
-            
-                               
                                 with open(nameas, "ab") as f2:
                                     sda=bin(int(binascii.hexlify(data),16))[2:]
                                     lenf=len(sda)
@@ -346,8 +338,6 @@ class compression:
                                             blockw=4
                                             blockw1=3
                                         
-                                            #print(sssssw)
-                                                
                                             wer=""
                                             
                               
@@ -439,8 +429,6 @@ class compression:
                                                 blockw=4
                                                 blockw1=3
                                     
-                                                    #print(sssssw)
-                                            
                                                 wer=""
                                        
                                                 assx=10
@@ -464,16 +452,20 @@ class compression:
 
                                             kl=blockw+1
                                             bnkw=kl
+                                            el=0
 
                                             for p in range(blockw+2):
                                                 if lenfg>0:
+
+                                                    takebit=sda[el:el+namezD]
+                                                    takebitdw=int(takebit, 2)
+                                                    numbertc=takebitdw
                                                     
                                                     if takebitdw2==numbertc:
                                                         numbertc=namezD2
                                                         
                                                         ghj=numbertc
-                                                        #print(ghj)
-                                                        #os.system("pause")
+                                                        
                                                 qfl=qfl+1
                                                 
                                                 bnk=1
@@ -485,9 +477,7 @@ class compression:
                                                     
                                                     ghjd=(ghj*(virationc-1))**bnkw
                                                     bnkw=bnkw-1
-                                                   
-                                                    #print(ghj)
-                                                            
+                                                        
                                                 cvz=cvz+ghjd
                                             szxw2=""   
                                             for p in range(blockw+2):
@@ -538,12 +528,9 @@ class compression:
                                                 
                                                 wer=wer+szx+szxw3
                                                
-                                            
-                                                    
                                                 numbertc=numbertc2
                                                 sw=sw+1
-                                                    #print(sw)
-                                                
+                                                  
                                             ddr=len(wers)
                                             
                                             sw=0
@@ -592,9 +579,7 @@ class compression:
                                     
                                     blockw=4
                                     blockw1=3
-                                
-                                    #print(sssssw)
-                                        
+     
                                     wer=""
                                     
                       
@@ -776,9 +761,7 @@ class compression:
                         with open(name, "rb") as binary_file:
                             data = binary_file.read()
                             lenf1=len(data)
-                            #if lenf1<400000:
-                                #print("This file is too small");
-                                #raise SystemExit
+                    
                             s=str(data)
                             lenf=len(data)
                         sda=bin(int(binascii.hexlify(data),16))[2:]
@@ -843,7 +826,7 @@ class compression:
                                     wer="0b"+wer
                                     n = int(wer, 2)
                                     qqwslenf=len(wer)
-                                    qqwslenf=(qqwslenf/8)*2
+                                    qqwslenf=(qqwslenf//8)*2
                                     qqwslenf=str(qqwslenf)
                                     qqwslenf="%0"+qqwslenf+"x"
                                     jl=binascii.unhexlify(qqwslenf % n)
@@ -928,9 +911,7 @@ class compression:
                                 b=-1
                                 kl=blockw+1
                                 bnkw=kl
-                                #print(kl)
-                                
-                                
+                            
                                 
                                 cb=0        
                                 er=-1
@@ -951,8 +932,7 @@ class compression:
                                                 byteb=notexist
                                                 
                                                 ghj=byteb
-                                                #print(ghj)
-                                                #os.system("pause")
+                                               
                                         qfl=qfl+1
                                         
                                         bnk=1
@@ -964,9 +944,7 @@ class compression:
                                            
                                             ghjd=(ghj*virationc)**bnkw
                                             bnkw=bnkw-1
-                                           
-                                            #print(ghj)
-                                                    
+                                        
                                         cvz=cvz+ghjd
                                         
                                     szxw2=""            
@@ -1020,16 +998,10 @@ class compression:
                                             szxw1=""
                                             cvz=0
                                        
-                                            
-                                        
-            
-                                    
                                         lenf=len(szx)
                                         
                                         szx=""
-                                
-                                
-                                        
+                                 
                                 qwaw=""
                                 
                                 a=0
@@ -1064,7 +1036,7 @@ class compression:
                         wer="0b"+wer
                         n = int(wer, 2)
                         qqwslenf=len(wer)
-                        qqwslenf=(qqwslenf/8)*2
+                        qqwslenf=(qqwslenf//8)*2
                         qqwslenf=str(qqwslenf)
                         qqwslenf="%0"+qqwslenf+"x"
                         jl=binascii.unhexlify(qqwslenf % n)
