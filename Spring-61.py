@@ -557,7 +557,7 @@ class compression:
                                             while z<xc:
                                                 szx="0"+szx
                                                 z=z+1
-                                    wer=szx+wer
+                                    
                                     n = int(wer, 2)
                                     
                                     qqwslenf=len(wer)
