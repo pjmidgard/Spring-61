@@ -497,14 +497,18 @@ class compression:
                                                         
                                                 cvz=cvz+ghjd
                                                 el=el+namezD
-                                            szxw2=""   
-                                            for p in range(blockw+2):
-                                                cvz2=cvz
+                                                
+                                            szxw2=""
+                                            
+                                            cvz2=cvz
+                                            cvz5=cvz
+                                            while cvz5!=0:
+                                                
                                                 cvz2=cvz2%virationc
                                                 cvz3=cvz2*virationc
-                                                cvz4=str(cvz3)
+                                                cvz4=str(cvz2)
                                                 
-                                                cvz2=cvz2-cvz3
+                                                cvz5=cvz5-cvz3
                                                 
                                                 szxw2=szxw2+cvz4
                                                 szxw3=bin(cvz4)[2:]
@@ -523,25 +527,9 @@ class compression:
                                                     
                                                 wer=wer+szx+szxw3
                                                 
-                                            cvz4=str(cvz2)
-                                            szxw2=szxw2+cvz4
+                                            
                                             szxw5=int(cvz2)
                                             
-                                            szxw3=bin(cvz4)[2:]
-                                            
-                                            lenf=len(szxw3)
-                                         
-                                            szx=""
-                                            xc=namezD-lenf
-                                            z=0
-                                            if xc!=0 and lenf!=namezD:
-                                                while z<xc:
-                                                    szx="0"+szx
-                                                    z=z+1
-                                                
-                                                
-                                            wer=wer+szx+szxw3
-                                               
                                             numbertc=numbertc2
                                             sw=sw+1
                                                   
@@ -961,20 +949,20 @@ class compression:
                                         
                                         cvz=cvz+ghjd
                                         
-                                    szxw2=""            
-                                    for p in range(blockw+2):
-                                        cvz2=cvz
+                                    szxw2=""
+                                    cvz2=cvz
+                                    cvz5=cvz
+                                    while cvz5!=0:
+                                        
                                         cvz2=cvz2%(10)
-                                        cvz3=cvz2*(10)
-                                        cvz4=str(cvz3)
+                                        cvz5=cvz2*(10)
+                                        cvz4=str(cvz2)
                                         
-                                        cvz2=cvz2-cvz3
-                                        
+                                        cvz5=cvz5-cvz3
+
                                         szxw2=szxw2+cvz4
                                         
-                                    cvz4=str(cvz2)
-                                    szxw2=szxw2+cvz4
-                                    szxw5=int(cvz2)
+                                    szxw5=int(szxw2)
                                     szxw3=bin(szxw5)[2:]
                                     
                                     lenf=len(szxw3)
