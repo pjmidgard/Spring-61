@@ -459,6 +459,9 @@ class compression:
                                             bnkw=kl
                                             el=0
 
+                                            ghj=0
+                                            cvz=0
+
                                             for p in range(blockw+2):
                                                 if lenfg>0:
 
@@ -921,7 +924,9 @@ class compression:
                                 p=0
                                 cvz=0
                                 if xx==1:
-                                    
+
+                                    ghjd=0
+                                    cvz=0
                                     for p in range(blockw+2):
                                         if lenfg>0:
                                             if virationc!=byteb:
