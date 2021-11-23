@@ -471,26 +471,26 @@ class compression:
                                             ghj=0
                                             cvz=0
 
-                                            for p in range(blockw+1):
-                                                if lenfg>0:
+                                           
+                                           
 
                                                    
-                                                    takebitdw=int(takebit, 2)
-                                                    numbertc=takebitdw
+                                            takebitdw=int(takebit, 2)
+                                            numbertc=takebitdw
                                                     
                                                     
                                                         
-                                                    ghj=numbertc
+                                            ghj=numbertc
                                                         
-                                                qfl=qfl+1
+                                            qfl=qfl+1
                                                 
-                                                bnk=1
+                                            bnk=1
                                                 
-                                                bnkd=1        
-                                                ghjd=ghj                                                    						 
+                                            bnkd=1        
+                                            ghjd=ghj                                                    						 
                                                         
-                                                cvz=ghjd
-                                                el=el+namezD
+                                            cvz=ghjd
+                                               
                                                 
                                             szxw2=""
                                             
