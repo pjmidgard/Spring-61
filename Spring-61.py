@@ -509,7 +509,7 @@ class compression:
                                                         z=z+1
                                                     
                                                     
-                                            wer=wer+szx+szxw3
+                                                wer=wer+szx+szxw3
                                                 
                                             cvz4=str(cvz2)
                                             szxw2=szxw2+cvz4
