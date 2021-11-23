@@ -949,8 +949,8 @@ class compression:
                                     szxw2=""            
                                     for p in range(blockw+2):
                                         cvz2=cvz
-                                        cvz2=cvz2%virationc
-                                        cvz3=cvz2*virationc
+                                        cvz2=cvz2%(virationc-1)
+                                        cvz3=cvz2*(virationc-1)
                                         cvz4=str(cvz3)
                                         
                                         cvz2=cvz2-cvz3
