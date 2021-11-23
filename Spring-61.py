@@ -489,9 +489,9 @@ class compression:
                                                 bnkd=1        
                                                 
                                                  
-                                                if lenfg>0:
+                                               
                                                     
-                                                    ghjd=ghj                                                    bnkw=bnkw-1
+                                                ghjd=ghj                                                    bnkw=bnkw-1
                                                         
                                                 cvz=ghjd
                                                 el=el+namezD
@@ -927,12 +927,12 @@ class compression:
                                     ghjd=0
                                     cvz=0
                                     for p in range(blockw+1):
-                                        if lenfg>0:
-                                            if virationc!=byteb:
+                                        
+                                        if virationc!=byteb:
                                                 byteb=numbers[p]
                                                 
                                                 ghj=byteb
-                                            if virationc==byteb:
+                                        if virationc==byteb:
                                                 byteb=notexist
                                                 
                                                 ghj=byteb
@@ -944,10 +944,10 @@ class compression:
                                         bnkd=1        
                                         
                                          
-                                        if lenfg>0:
+                                        
                                            
-                                            ghjd=(ghj*virationc)**bnkw
-                                            bnkw=bnkw-1
+                                        ghjd=(ghj*virationc)**bnkw
+                                        bnkw=bnkw-1
                                         
                                         cvz=cvz+ghjd
                                         
