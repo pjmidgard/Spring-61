@@ -500,7 +500,7 @@ class compression:
 
                                                 lenf=len(szxw3)
                                          
-                                           
+                                                szx=""
                                                 xc=namezD-lenf
                                                 z=0
                                                 if xc!=0 and lenf!=namezD:
@@ -519,7 +519,7 @@ class compression:
                                             
                                             lenf=len(szxw3)
                                          
-                                           
+                                            szx=""
                                             xc=namezD-lenf
                                             z=0
                                             if xc!=0 and lenf!=namezD:
