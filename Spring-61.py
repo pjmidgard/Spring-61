@@ -464,17 +464,17 @@ class compression:
                                             numbertc=takebitdw
 
 
-                                            kl=blockw+1
+                                            kl=blockw
                                             bnkw=kl
                                             el=0
 
                                             ghj=0
                                             cvz=0
 
-                                            for p in range(blockw+2):
+                                            for p in range(blockw+1):
                                                 if lenfg>0:
 
-                                                    takebit=sda[el:el+namezD]
+                                                   
                                                     takebitdw=int(takebit, 2)
                                                     numbertc=takebitdw
                                                     
@@ -492,10 +492,9 @@ class compression:
                                                  
                                                 if lenfg>0:
                                                     
-                                                    ghjd=(ghj*(10))**bnkw
-                                                    bnkw=bnkw-1
+                                                    ghjd=ghj                                                    bnkw=bnkw-1
                                                         
-                                                cvz=cvz+ghjd
+                                                cvz=ghjd
                                                 el=el+namezD
                                                 
                                             szxw2=""
@@ -909,7 +908,7 @@ class compression:
                                                 return print(x3)
 
                                 b=-1
-                                kl=blockw+1
+                                kl=blockw
                                 bnkw=kl
                             
                                 
@@ -924,7 +923,7 @@ class compression:
 
                                     ghjd=0
                                     cvz=0
-                                    for p in range(blockw+2):
+                                    for p in range(blockw+1):
                                         if lenfg>0:
                                             if virationc!=byteb:
                                                 byteb=numbers[p]
