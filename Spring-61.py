@@ -300,6 +300,11 @@ class compression:
                                 blockDE=(blockDR*namezD)-namezD-1
                                 BlockF=blockDR
                                 namezD2=(2**namezD)-1
+                                
+                                block=blockDR
+                                blockw=block-1
+                                blockw1=2**namezD
+                                virationc=(2**namezD)-1
             
                                 with open(nameas, "ab") as f2:
                                     sda=bin(int(binascii.hexlify(data),16))[2:]
@@ -475,7 +480,7 @@ class compression:
                                                  
                                                 if lenfg>0:
                                                     
-                                                    ghjd=(ghj*(virationc-1))**bnkw
+                                                    ghjd=(ghj*(virationc))**bnkw
                                                     bnkw=bnkw-1
                                                         
                                                 cvz=cvz+ghjd
@@ -483,8 +488,8 @@ class compression:
                                             szxw2=""   
                                             for p in range(blockw+2):
                                                 cvz2=cvz
-                                                cvz2=cvz2%virationc
-                                                cvz3=cvz2*virationc
+                                                cvz2=cvz2%virationc+1
+                                                cvz3=cvz2*virationc+1
                                                 cvz4=str(cvz3)
                                                 
                                                 cvz2=cvz2-cvz3
@@ -941,7 +946,7 @@ class compression:
                                          
                                         if lenfg>0:
                                            
-                                            ghjd=(ghj*virationc)**bnkw
+                                            ghjd=(ghj*virationc+1)**bnkw
                                             bnkw=bnkw-1
                                         
                                         cvz=cvz+ghjd
@@ -949,8 +954,8 @@ class compression:
                                     szxw2=""            
                                     for p in range(blockw+2):
                                         cvz2=cvz
-                                        cvz2=cvz2%(virationc-1)
-                                        cvz3=cvz2*(virationc-1)
+                                        cvz2=cvz2%(virationc)
+                                        cvz3=cvz2*(virationc)
                                         cvz4=str(cvz3)
                                         
                                         cvz2=cvz2-cvz3
