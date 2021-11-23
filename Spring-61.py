@@ -478,10 +478,9 @@ class compression:
                                                     takebitdw=int(takebit, 2)
                                                     numbertc=takebitdw
                                                     
-                                                    if takebitdw2==numbertc:
-                                                        numbertc=namezD2
+                                                    
                                                         
-                                                        ghj=numbertc
+                                                    ghj=numbertc
                                                         
                                                 qfl=qfl+1
                                                 
@@ -504,6 +503,10 @@ class compression:
                                             while cvz5!=0:
                                                 
                                                 cvz2=cvz2%virationc
+
+                                                if takebitdw2==cvz2:
+                                                        cvz2=namezD2
+
                                                 cvz3=cvz2*virationc
                                                 cvz4=str(cvz2)
                                                 
