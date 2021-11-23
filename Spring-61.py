@@ -955,7 +955,7 @@ class compression:
                                     while cvz5!=0:
                                         
                                         cvz2=cvz2%(10)
-                                        cvz5=cvz2*(10)
+                                        cvz3=cvz2*(10)
                                         cvz4=str(cvz2)
                                         
                                         cvz5=cvz5-cvz3
