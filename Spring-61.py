@@ -86,7 +86,6 @@ PI=f.read()
 
 #@Author Jurijus pacalovas
 class compression:
-
     def Areacu2(self):
                     if namez=="u2":
                         x=0
@@ -154,9 +153,6 @@ class compression:
                             
                                 blockDR=28
 
-    
-
-                          
                         countraz=0
                         C=0
                         s=""
@@ -312,12 +308,12 @@ class compression:
                                 blockDE=(blockDR*namezD)-namezD-1
                                 BlockF=blockDR
                                 namezD2=(2**namezD)-1
-            
-            
                                 
-                               
+                                block=blockDR
+                                blockw=block-1
+                                blockw1=2**namezD
+                                virationc=(2**namezD)-1
             
-                               
                                 with open(nameas, "ab") as f2:
                                     sda=bin(int(binascii.hexlify(data),16))[2:]
                                     lenf=len(sda)
@@ -355,8 +351,6 @@ class compression:
                                             blockw=4
                                             blockw1=3
                                         
-                                            #print(sssssw)
-                                                
                                             wer=""
                                             
                               
@@ -448,8 +442,6 @@ class compression:
                                                 blockw=4
                                                 blockw1=3
                                     
-                                                    #print(sssssw)
-                                            
                                                 wer=""
                                        
                                                 assx=10
@@ -469,36 +461,89 @@ class compression:
                                             takebitdw=int(takebit, 2)
                                             sw=0
                                             numbertc=takebitdw
-                                            
-                                               
-                                            while sw<BlockF:
+
+
+                                            kl=blockw+1
+                                            bnkw=kl
+                                            el=0
+
+                                            ghj=0
+                                            cvz=0
+
+                                            for p in range(blockw+2):
+                                                if lenfg>0:
+
+                                                    takebit=sda[el:el+namezD]
+                                                    takebitdw=int(takebit, 2)
+                                                    numbertc=takebitdw
                                                     
-                                                numbertc3=numbertc%namezD2
-                                                numbertc1=numbertc//namezD2
-                                                numbertc2=int(numbertc1)
-                                                    
-                                                    
-                                                if takebitdw2==numbertc3:
-                                                    numbertc3=namezD2
-                                                        #print(takebitdw2)
-                                                       # print(numbertc3)
+                                                    if takebitdw2==numbertc:
+                                                        numbertc=namezD2
                                                         
-                                                    
-                                                szxzzz=""
-                                                szxzzz=bin(numbertc3)[2:]
-                                                dd=len(szxzzz)
-                                                xc=namezD-dd%namezD
-                                                z=0
-                                                if xc!=0 and dd!=namezD:
-                                                    while z<xc:
-                                                        szxzzz="0"+szxzzz
-                                                        z=z+1
-                                                wers=wers+szxzzz
-                                                    
-                                                numbertc=numbertc2
-                                                sw=sw+1
-                                                    #print(sw)
+                                                        ghj=numbertc
+                                                        
+                                                qfl=qfl+1
                                                 
+                                                bnk=1
+                                                
+                                                bnkd=1        
+                                                
+                                                 
+                                                if lenfg>0:
+                                                    
+                                                    ghjd=(ghj*(10))**bnkw
+                                                    bnkw=bnkw-1
+                                                        
+                                                cvz=cvz+ghjd
+                                                el=el+namezD
+                                            szxw2=""   
+                                            for p in range(blockw+2):
+                                                cvz2=cvz
+                                                cvz2=cvz2%virationc
+                                                cvz3=cvz2*virationc
+                                                cvz4=str(cvz3)
+                                                
+                                                cvz2=cvz2-cvz3
+                                                
+                                                szxw2=szxw2+cvz4
+                                                szxw3=bin(cvz4)[2:]
+                                                lenf=len(szxw3)
+
+                                                lenf=len(szxw3)
+                                         
+                                                szx=""
+                                                xc=namezD-lenf
+                                                z=0
+                                                if xc!=0 and lenf!=namezD:
+                                                    while z<xc:
+                                                        szx="0"+szx
+                                                        z=z+1
+                                                    
+                                                    
+                                                wer=wer+szx+szxw3
+                                                
+                                            cvz4=str(cvz2)
+                                            szxw2=szxw2+cvz4
+                                            szxw5=int(cvz2)
+                                            
+                                            szxw3=bin(cvz4)[2:]
+                                            
+                                            lenf=len(szxw3)
+                                         
+                                            szx=""
+                                            xc=namezD-lenf
+                                            z=0
+                                            if xc!=0 and lenf!=namezD:
+                                                while z<xc:
+                                                    szx="0"+szx
+                                                    z=z+1
+                                                
+                                                
+                                            wer=wer+szx+szxw3
+                                               
+                                            numbertc=numbertc2
+                                            sw=sw+1
+                                                  
                                             ddr=len(wers)
                                             
                                             sw=0
@@ -517,11 +562,6 @@ class compression:
                                                    
                                             wers=""
                                         
-                                        
-
-
-                                    wer=wer+sda[C:]
-                                   
                                     lenf=len(wer)
                                     xc=8-lenf%8
                                     z=0
@@ -530,7 +570,7 @@ class compression:
                                             while z<xc:
                                                 szx="0"+szx
                                                 z=z+1
-                                    wer=szx+wer
+                                    
                                     n = int(wer, 2)
                                     
                                     qqwslenf=len(wer)
@@ -550,9 +590,7 @@ class compression:
                                     
                                     blockw=4
                                     blockw1=3
-                                
-                                    #print(sssssw)
-                                        
+     
                                     wer=""
                                     
                       
@@ -734,9 +772,7 @@ class compression:
                         with open(name, "rb") as binary_file:
                             data = binary_file.read()
                             lenf1=len(data)
-                            #if lenf1<400000:
-                                #print("This file is too small");
-                                #raise SystemExit
+                    
                             s=str(data)
                             lenf=len(data)
                         sda=bin(int(binascii.hexlify(data),16))[2:]
@@ -801,7 +837,7 @@ class compression:
                                     wer="0b"+wer
                                     n = int(wer, 2)
                                     qqwslenf=len(wer)
-                                    qqwslenf=(qqwslenf/8)*2
+                                    qqwslenf=(qqwslenf//8)*2
                                     qqwslenf=str(qqwslenf)
                                     qqwslenf="%0"+qqwslenf+"x"
                                     jl=binascii.unhexlify(qqwslenf % n)
@@ -820,10 +856,7 @@ class compression:
                                    
                                     acvb=lenfg-1
                                     notexist=k[0]
-                                  
-                                    
-                                    
-                                   
+                                    #print(notexist)
                                     
                                     if notexist>virationc or notexist<0:
                                         wer="01111111"+sda
@@ -845,19 +878,11 @@ class compression:
                                             x3 = x2-x
                                             return print(x3)
 
-                                        
-                                        
-                                        
-                                       
                                     else:
                                         xx=1
                                         szx=bin(notexist)[2:]
                                         lenf=len(szx)
-                                        
-                                            
                                        
-                                        
-                                            
                                         z=0
                                         if xc!=0 and lenf!=bitc:
                                             while z<xc:
@@ -896,9 +921,8 @@ class compression:
 
                                 b=-1
                                 kl=blockw+1
-                                bnkw=virationc**(kl)
-                                
-                                
+                                bnkw=kl
+                            
                                 
                                 cb=0        
                                 er=-1
@@ -908,8 +932,10 @@ class compression:
                                 p=0
                                 cvz=0
                                 if xx==1:
-                                    
-                                    for p in range(blockw+1):
+
+                                    ghjd=0
+                                    cvz=0
+                                    for p in range(blockw+2):
                                         if lenfg>0:
                                             if virationc!=byteb:
                                                 byteb=numbers[p]
@@ -919,41 +945,38 @@ class compression:
                                                 byteb=notexist
                                                 
                                                 ghj=byteb
-                                                #print(ghj)
-                                                #os.system("pause")
+                                               
                                         qfl=qfl+1
-                                        ghjd=ghj
+                                        
                                         bnk=1
                                         
                                         bnkd=1        
-                                        kl=kl-1
-                                                
-                                                
-                                                
-                                                  
-                                        if lenfg>0:
-                                                    
-                                            bnkw=bnkw//virationc
-                                            #print(bnkw)
-                                            #os.system("pause")
-                                           
-                                            
                                         
-                                                        
-                                                
-            
-                                            ghjd=0
-                                            ghjd=ghj*bnkw
-                                            #print(ghj)
-                                                    
+                                         
+                                        if lenfg>0:
+                                           
+                                            ghjd=(ghj*virationc)**bnkw
+                                            bnkw=bnkw-1
+                                        
                                         cvz=cvz+ghjd
-                                                
+                                        
+                                    szxw2=""            
+                                    for p in range(blockw+2):
+                                        cvz2=cvz
+                                        cvz2=cvz2%(10)
+                                        cvz3=cvz2*(10)
+                                        cvz4=str(cvz3)
+                                        
+                                        cvz2=cvz2-cvz3
+                                        
+                                        szxw2=szxw2+cvz4
+                                        
+                                    cvz4=str(cvz2)
+                                    szxw2=szxw2+cvz4
+                                    szxw5=int(cvz2)
+                                    szxw3=bin(szxw5)[2:]
                                     
-                                    bnkw=1023**(kl)
-                                    
-                                    szx=bin(cvz)[2:]
-                                    cvz=0
-                                    lenf=len(szx)
+                                    lenf=len(szxw3)
                                  
                                     if lenfg>0:
                                         if lenf>blockD:
@@ -976,7 +999,6 @@ class compression:
                                                 x2 = time()
                                                 x3 = x2-x
                                                 return print(x3)
-                                        szx=""      
                                         xc=blockD-lenf
                                         z=0
                                         if xc!=0 and lenf!=blockD:
@@ -985,19 +1007,14 @@ class compression:
                                                 z=z+1
                                         
                                         if xx==1:  
-                                            wer=wer+szx+szxw1
+                                            wer=wer+szx+szxw3
                                             szxw1=""
+                                            cvz=0
                                        
-                                            
-                                        
-            
-                                    
                                         lenf=len(szx)
                                         
                                         szx=""
-                                
-                                
-                                        
+                                 
                                 qwaw=""
                                 
                                 a=0
@@ -1026,13 +1043,13 @@ class compression:
                                 while z<xc:
                                     szx="0"+szx
                                     z=z+1
-                        wer=szx+wer
+                        wer=wer+szx
                         lenf=len(szx)                      
                         szx=""        
                         wer="0b"+wer
                         n = int(wer, 2)
                         qqwslenf=len(wer)
-                        qqwslenf=(qqwslenf/8)*2
+                        qqwslenf=(qqwslenf//8)*2
                         qqwslenf=str(qqwslenf)
                         qqwslenf="%0"+qqwslenf+"x"
                         jl=binascii.unhexlify(qqwslenf % n)
@@ -1043,7 +1060,6 @@ class compression:
                             x2 = time()
                             x3 = x2-x
                             return print(x3)
-
 
     def cryptograpy_compression4(self):
                 
