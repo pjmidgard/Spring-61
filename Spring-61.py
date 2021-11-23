@@ -494,7 +494,7 @@ class compression:
                                                 
                                                 cvz2=cvz2-cvz3
                                                 
-                                                szxw2=szxw2+
+                                                szxw2=szxw2+cvz4
                                                 szxw3=bin(cvz4)[2:]
                                                 lenf=len(szxw3)
 
