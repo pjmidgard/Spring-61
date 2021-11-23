@@ -87,7 +87,7 @@ PI=f.read()
 #@Author Jurijus pacalovas
 class compression:
 
-       def Areacu2(self):
+	def Areacu2(self):
                     if namez=="u2":
                         x=0
                         x1=0
@@ -487,11 +487,7 @@ class compression:
                                                 bnk=1
                                                 
                                                 bnkd=1        
-                                                
-                                                 
-                                               
-                                                    
-                                                ghjd=ghj                                                    bnkw=bnkw-1
+                                                ghjd=ghj                                                    						 
                                                         
                                                 cvz=ghjd
                                                 el=el+namezD
@@ -592,8 +588,7 @@ class compression:
                                     x3 = x2-x
                                     return print(x3) 
 
-    
-    def Areac2(self):
+	def Areac2(self):
                     if namez=="c2":
 
                         namezD = int(input("Please, enter Deep? "))
@@ -1053,7 +1048,7 @@ class compression:
                             return print(x3)
 
 
-    def cryptograpy_compression4(self):
+	def cryptograpy_compression4(self):
                 
                 self.name = "Written: Jurijus pacalovas Date: 29/09/2021 18:06"
                 
