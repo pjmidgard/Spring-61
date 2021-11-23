@@ -86,7 +86,8 @@ PI=f.read()
 
 #@Author Jurijus pacalovas
 class compression:
-    def Areacu2(self):
+
+       def Areacu2(self):
                     if namez=="u2":
                         x=0
                         x1=0
@@ -1060,6 +1061,7 @@ class compression:
                             x2 = time()
                             x3 = x2-x
                             return print(x3)
+
 
     def cryptograpy_compression4(self):
                 
