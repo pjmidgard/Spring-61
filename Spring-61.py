@@ -949,7 +949,7 @@ class compression:
                                     szxw2=""
                                     cvz2=cvz
                                     cvz5=cvz
-                                    while cvz5!=0:
+                                    while cvz5>=0:
                                         
                                         cvz2=cvz2%(10)
                                         cvz3=cvz2*(10)
@@ -959,6 +959,7 @@ class compression:
                                        
 
                                         szxw2=szxw2+cvz4
+                                        #print(cvz5)
                                        
                                         
                                     szxw5=int(szxw2)
