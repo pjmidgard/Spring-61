@@ -988,6 +988,7 @@ class compression:
                                                 x2 = time()
                                                 x3 = x2-x
                                                 return print(x3)
+                                        
                                         xc=blockD-lenf
                                         z=0
                                         if xc!=0 and lenf!=blockD:
