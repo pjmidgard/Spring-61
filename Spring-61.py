@@ -941,7 +941,7 @@ class compression:
                                          
                                         
                                            
-                                        ghjd=(ghj*virationc)**bnkw
+                                        ghjd=(ghj)**bnkw
                                         bnkw=bnkw-1
                                         
                                         cvz=cvz+ghjd
@@ -956,8 +956,10 @@ class compression:
                                         cvz4=str(cvz2)
                                         
                                         cvz5=cvz5-cvz3
+                                       
 
                                         szxw2=szxw2+cvz4
+                                       
                                         
                                     szxw5=int(szxw2)
                                     szxw3=bin(szxw5)[2:]
