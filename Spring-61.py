@@ -941,7 +941,7 @@ class compression:
                                          
                                         
                                            
-                                        ghjd=(ghj)**bnkw
+                                        ghjd=(ghj)
                                         bnkw=bnkw-1
                                         
                                         cvz=cvz+ghjd
