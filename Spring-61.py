@@ -460,7 +460,7 @@ class compression:
                                             takebit=sda[el:eo]
              
                                             takebitdw=int(takebit, 2)
-                                            print(takebitdw)
+                                           
                                             sw=0
                                             numbertc=takebitdw
 
