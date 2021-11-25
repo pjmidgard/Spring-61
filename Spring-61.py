@@ -118,36 +118,36 @@ class compression:
                      
                         if namezD==18:
 
-                                blockDR=173612
+                                blockDR=3125000
 
                         elif namezD==17:
 
-                                blockDR=93612
+                                blockDR=1685000
 
                         elif namezD==16:
 
-                                blockDR=42223
+                                blockDR=760100
 
                         elif namezD==15:
 
-                                blockDR=25334
+                                blockDR=380000
 
 
                         elif namezD==14:
 
-                                blockDR=9362
+                                blockDR=168500
                                 
                         elif namezD==13:
                                 
-                                blockDR=4223
+                                blockDR=76010
                                 
                         elif namezD==12:
                                 
-                                blockDR=2112
+                                blockDR=38000
 
                         elif namezD==11:
                                 
-                                blockDR=1014
+                                blockDR=18250
 
 
                         elif namezD==7:
@@ -496,7 +496,7 @@ class compression:
                                             
                                             cvz2=cvz
                                             cvz5=cvz
-                                            while cvz5>=0:
+                                            while cvz5!=0:
                                                 
                                                 cvz2=cvz2%virationc
 
@@ -509,7 +509,7 @@ class compression:
                                                 cvz5=cvz5-cvz3
                                                 
                                                 szxw2=szxw2+cvz4
-                                                szxw3=bin(cvz4)[2:]
+                                                szxw3=bin(cvz2)[2:]
                                                 lenf=len(szxw3)
 
                                                 lenf=len(szxw3)
@@ -595,36 +595,36 @@ class compression:
 
                         if namezD==18:
 
-                                blockDR=173612
+                                blockDR=3125000
 
                         elif namezD==17:
 
-                                blockDR=93612
+                                blockDR=1685000
 
                         elif namezD==16:
 
-                                blockDR=42223
+                                blockDR=760100
 
                         elif namezD==15:
 
-                                blockDR=25334
+                                blockDR=380000
 
 
                         elif namezD==14:
 
-                                blockDR=9362
+                                blockDR=168500
                                 
                         elif namezD==13:
                                 
-                                blockDR=4223
+                                blockDR=76010
                                 
                         elif namezD==12:
                                 
-                                blockDR=2112
+                                blockDR=38000
 
                         elif namezD==11:
                                 
-                                blockDR=1014
+                                blockDR=18250
 
 
                         elif namezD==7:
@@ -941,19 +941,34 @@ class compression:
                                          
                                         
                                            
-                                        ghjd=(ghj**bnkw)
+                                        ghjd=(ghj*virationc)**bnkw
                                         bnkw=bnkw-1
                                         
                                         cvz=cvz+ghjd
                                         
-                                  
-                                    szxw3=bin(cvz)[2:]
+                                    szxw2=""
+                                    cvz2=cvz
+                                    cvz5=cvz
+                                    while cvz5>=0:
+                                        
+                                        cvz2=cvz2%(10)
+                                        cvz3=cvz2*(10)
+                                        cvz4=str(cvz2)
+                                        
+                                        cvz5=cvz5-cvz3
+                                       
+
+                                        szxw2=szxw2+cvz4
+                                        #print(cvz5)
+                                       
+                                        
+                                    szxw5=int(szxw2)
+                                    szxw3=bin(szxw5)[2:]
                                     
                                     lenf=len(szxw3)
-                                    
                                  
-                                    
-                                    if lenf>blockD:
+                                    if lenfg>0:
+                                        if lenf>blockD:
                                             wer="01111111"+sda
                                             lenf=len(wer)
                                       
@@ -973,22 +988,22 @@ class compression:
                                                 x2 = time()
                                                 x3 = x2-x
                                                 return print(x3)
-                                    
-                                    xc=blockD-lenf
-                                    z=0
-                                    if xc!=0 and lenf!=blockD:
+                                        
+                                        xc=blockD-lenf
+                                        z=0
+                                        if xc!=0 and lenf!=blockD:
                                             while z<xc:
                                                 szx="0"+szx
                                                 z=z+1
                                         
-                                    if xx==1:  
+                                        if xx==1:  
                                             wer=wer+szx+szxw3
                                             szxw1=""
                                             cvz=0
                                        
-                                    lenf=len(szx)
+                                        lenf=len(szx)
                                         
-                                    szx=""
+                                        szx=""
                                  
                                 qwaw=""
                                 
