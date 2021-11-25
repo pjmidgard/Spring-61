@@ -496,7 +496,7 @@ class compression:
                                             
                                             cvz2=cvz
                                             cvz5=cvz
-                                            while cvz5!=0:
+                                            while cvz5>=0:
                                                 
                                                 cvz2=cvz2%virationc
 
@@ -946,24 +946,8 @@ class compression:
                                         
                                         cvz=cvz+ghjd
                                         
-                                    szxw2=""
-                                    cvz2=cvz
-                                    cvz5=cvz
-                                    while cvz5>=0:
-                                        
-                                        cvz2=cvz2%(10)
-                                        cvz3=cvz2*(10)
-                                        cvz4=str(cvz2)
-                                        
-                                        cvz5=cvz5-cvz3
-                                       
-
-                                        szxw2=szxw2+cvz4
-                                        #print(cvz5)
-                                       
-                                        
-                                    szxw5=int(szxw2)
-                                    szxw3=bin(szxw5)[2:]
+                                  
+                                    szxw3=bin(cvz)[2:]
                                     
                                     lenf=len(szxw3)
                                  
