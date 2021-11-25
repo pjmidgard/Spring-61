@@ -630,6 +630,7 @@ class compression:
                         elif namezD==7:
                             
                                 blockDR=28
+
                         else:
                             raise SystemExit
                             
@@ -940,7 +941,7 @@ class compression:
                                          
                                         
                                            
-                                        ghjd=(ghj*virationc)**bnkw
+                                        ghjd=(ghj**bnkw)
                                         bnkw=bnkw-1
                                         
                                         cvz=cvz+ghjd
