@@ -498,7 +498,7 @@ class compression:
                                             
                                             
                                             #print(cvz)
-                                            while cvz5>=virationc-1:
+                                            while cvz5>virationc-1:
                                                 
                                                 cvz2=cvz//(virationc-1)
                                                 
