@@ -958,10 +958,10 @@ class compression:
                                     cvz5=cvz
                                     
                                     szxw3=bin(cvz)[2:]
-                                    print(szxw3)
+                                    #print(szxw3)
                                     
                                     lenf=len(szxw3)
-                                 
+                                    #print(lenf)
                                     
                                     if lenf>blockD:
                                             wer="01111111"+sda
