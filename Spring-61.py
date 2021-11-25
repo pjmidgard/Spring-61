@@ -495,28 +495,28 @@ class compression:
                                                 
                                             szxw2=""
                                             
-                                            cvz2=cvz
-                                            cvz5=cvz
+                                            
+                                            
                                             #print(cvz)
-                                            while cvz>=0:
+                                            while cvz5>=virationc-1:
                                                 
                                                 cvz2=cvz//(virationc-1)
                                                 
                                                 cvz3=cvz2*(virationc-1)
                                                 cvz4=str(cvz2)
                                                 
-                                                cvz4=cvz-cvz3
+                                                cvz5=cvz-cvz3
                                                 cvz=cvz2
                                                 
                                                
                                               
                                                 szxw2=szxw2+cvz4
                                                 
-                                                if takebitdw2==cvz:
-                                                        cvz=namezD2
+                                                if takebitdw2==cvz5:
+                                                        cvz5=namezD2
                                                 
                                                 
-                                                szxw3=bin(cvz)[2:]
+                                                szxw3=bin(cvz5)[2:]
                                                 lenf=len(szxw3)
 
                                                 lenf=len(szxw3)
