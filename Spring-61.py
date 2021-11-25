@@ -630,7 +630,6 @@ class compression:
                         elif namezD==7:
                             
                                 blockDR=28
-
                         else:
                             raise SystemExit
                             
@@ -950,6 +949,7 @@ class compression:
                                     szxw3=bin(cvz)[2:]
                                     
                                     lenf=len(szxw3)
+                                    print(lenf)
                                  
                                     
                                     if lenf>blockD:
