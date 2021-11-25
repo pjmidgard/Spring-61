@@ -118,36 +118,36 @@ class compression:
                      
                         if namezD==18:
 
-                                blockDR=3125000
+                                blockDR=173612
 
                         elif namezD==17:
 
-                                blockDR=1685000
+                                blockDR=93612
 
                         elif namezD==16:
 
-                                blockDR=760100
+                                blockDR=42223
 
                         elif namezD==15:
 
-                                blockDR=380000
+                                blockDR=25334
 
 
                         elif namezD==14:
 
-                                blockDR=168500
+                                blockDR=9362
                                 
                         elif namezD==13:
                                 
-                                blockDR=76010
+                                blockDR=4223
                                 
                         elif namezD==12:
                                 
-                                blockDR=38000
+                                blockDR=2112
 
                         elif namezD==11:
                                 
-                                blockDR=18250
+                                blockDR=1014
 
 
                         elif namezD==7:
@@ -595,36 +595,36 @@ class compression:
 
                         if namezD==18:
 
-                                blockDR=3125000
+                                blockDR=173612
 
                         elif namezD==17:
 
-                                blockDR=1685000
+                                blockDR=93612
 
                         elif namezD==16:
 
-                                blockDR=760100
+                                blockDR=42223
 
                         elif namezD==15:
 
-                                blockDR=380000
+                                blockDR=25334
 
 
                         elif namezD==14:
 
-                                blockDR=168500
+                                blockDR=9362
                                 
                         elif namezD==13:
                                 
-                                blockDR=76010
+                                blockDR=4223
                                 
                         elif namezD==12:
                                 
-                                blockDR=38000
+                                blockDR=2112
 
                         elif namezD==11:
                                 
-                                blockDR=18250
+                                blockDR=1014
 
 
                         elif namezD==7:
