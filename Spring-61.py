@@ -496,7 +496,7 @@ class compression:
                                             
                                             cvz2=cvz
                                             cvz5=cvz
-                                            while cvz5!=0:
+                                            while cvz5>=0:
                                                 
                                                 cvz2=cvz2%virationc
 
