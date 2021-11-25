@@ -498,12 +498,12 @@ class compression:
                                             cvz5=cvz
                                             while cvz5>=0:
                                                 
-                                                cvz2=cvz2%virationc
+                                                cvz2=cvz2%(virationc-1)
 
                                                 if takebitdw2==cvz2:
                                                         cvz2=namezD2
 
-                                                cvz3=cvz2*virationc
+                                                cvz3=cvz2*(virationc-1)
                                                 cvz4=str(cvz2)
                                                 
                                                 cvz5=cvz5-cvz3
@@ -939,9 +939,11 @@ class compression:
                                         bnkd=1        
                                         
                                          
+                                        if ghj==virationc:
+                                            raise SystemExit 
+                                            
                                         
-                                           
-                                        ghjd=(ghj*virationc)**bnkw
+                                        ghjd=(ghj*(virationc-1))**bnkw
                                         bnkw=bnkw-1
                                         
                                         c=cvz+ghjd
