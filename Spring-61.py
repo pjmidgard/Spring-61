@@ -951,8 +951,8 @@ class compression:
                                     
                                     lenf=len(szxw3)
                                  
-                                    if lenfg>0:
-                                        if lenf>blockD:
+                                    
+                                    if lenf>blockD:
                                             wer="01111111"+sda
                                             lenf=len(wer)
                                       
@@ -972,22 +972,22 @@ class compression:
                                                 x2 = time()
                                                 x3 = x2-x
                                                 return print(x3)
-                                        
-                                        xc=blockD-lenf
-                                        z=0
-                                        if xc!=0 and lenf!=blockD:
+                                    
+                                    xc=blockD-lenf
+                                    z=0
+                                    if xc!=0 and lenf!=blockD:
                                             while z<xc:
                                                 szx="0"+szx
                                                 z=z+1
                                         
-                                        if xx==1:  
+                                    if xx==1:  
                                             wer=wer+szx+szxw3
                                             szxw1=""
                                             cvz=0
                                        
-                                        lenf=len(szx)
+                                    lenf=len(szx)
                                         
-                                        szx=""
+                                    szx=""
                                  
                                 qwaw=""
                                 
