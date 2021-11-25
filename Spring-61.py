@@ -505,16 +505,18 @@ class compression:
                                                 cvz3=cvz2*(virationc-1)
                                                 cvz4=str(cvz2)
                                                 
-                                                cvz=cvz-cvz2
+                                                cvz4=cvz-cvz3
+                                                cvz=cvz2
+                                                
                                                
                                               
                                                 szxw2=szxw2+cvz4
                                                 
-                                                if takebitdw2==cvz5:
-                                                        cvz5=namezD2
+                                                if takebitdw2==cvz:
+                                                        cvz=namezD2
                                                 
                                                 
-                                                szxw3=bin(cvz5)[2:]
+                                                szxw3=bin(cvz)[2:]
                                                 lenf=len(szxw3)
 
                                                 lenf=len(szxw3)
