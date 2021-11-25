@@ -498,16 +498,16 @@ class compression:
                                             cvz2=cvz
                                             cvz5=cvz
                                             #print(cvz)
-                                            while cvz2>=0:
+                                            while cvz>=0:
                                                 
                                                 cvz2=cvz//(virationc-1)
                                                 
                                                 cvz3=cvz2*(virationc-1)
                                                 cvz4=str(cvz2)
                                                 
-                                                cvz5=cvz5-cvz3
-                                                cvz=cvz3
-                                                
+                                                cvz=cvz-cvz2
+                                               
+                                              
                                                 szxw2=szxw2+cvz4
                                                 
                                                 if takebitdw2==cvz5:
