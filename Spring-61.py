@@ -460,6 +460,7 @@ class compression:
                                             takebit=sda[el:eo]
              
                                             takebitdw=int(takebit, 2)
+                                            print(takebitdw)
                                             sw=0
                                             numbertc=takebitdw
 
@@ -496,20 +497,24 @@ class compression:
                                             
                                             cvz2=cvz
                                             cvz5=cvz
-                                            while cvz5>=0:
+                                            print(cvz)
+                                            while cvz2>=0:
                                                 
-                                                cvz2=cvz2%(virationc-1)
-
-                                                if takebitdw2==cvz2:
-                                                        cvz2=namezD2
-
+                                                cvz2=cvz//(virationc-1)
+                                                
                                                 cvz3=cvz2*(virationc-1)
                                                 cvz4=str(cvz2)
                                                 
                                                 cvz5=cvz5-cvz3
+                                                cvz=cvz3
                                                 
                                                 szxw2=szxw2+cvz4
-                                                szxw3=bin(cvz2)[2:]
+                                                
+                                                if takebitdw2==cvz5:
+                                                        cvz5=namezD2
+                                                
+                                                
+                                                szxw3=bin(cvz5)[2:]
                                                 lenf=len(szxw3)
 
                                                 lenf=len(szxw3)
@@ -528,7 +533,7 @@ class compression:
                                             
                                             szxw5=int(cvz2)
                                             
-                                            numbertc=numbertc2
+                                            
                                             sw=sw+1
                                                   
                                             ddr=len(wers)
@@ -942,22 +947,23 @@ class compression:
                                         if ghj==virationc:
                                             raise SystemExit 
                                             
-                                        
+                                       
                                         ghjd=(ghj*(virationc-1))**bnkw
                                         bnkw=bnkw-1
                                         
-                                        c=cvz+ghjd
+                                        cvz=cvz+ghjd
                                         
                                     szxw2=""
                                     cvz2=cvz
                                     cvz5=cvz
                                     
                                     szxw3=bin(cvz)[2:]
+                                    print(szxw3)
                                     
                                     lenf=len(szxw3)
                                  
-                                    if lenfg>0:
-                                        if lenf>blockD:
+                                    
+                                    if lenf>blockD:
                                             wer="01111111"+sda
                                             lenf=len(wer)
                                       
@@ -977,22 +983,22 @@ class compression:
                                                 x2 = time()
                                                 x3 = x2-x
                                                 return print(x3)
-                                        
-                                        xc=blockD-lenf
-                                        z=0
-                                        if xc!=0 and lenf!=blockD:
+                                    szx=""
+                                    xc=blockD-lenf
+                                    z=0
+                                    if xc!=0 and lenf!=blockD:
                                             while z<xc:
                                                 szx="0"+szx
                                                 z=z+1
                                         
-                                        if xx==1:  
-                                            wer=wer+szx+szxw3
-                                            szxw1=""
-                                            cvz=0
                                        
-                                        lenf=len(szx)
+                                    wer=wer+szx+szxw3
+                                    szxw1=""
+                                    cvz=0
+                                       
+                                    lenf=len(szx)
                                         
-                                        szx=""
+                                    szx=""
                                  
                                 qwaw=""
                                 
