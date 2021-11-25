@@ -497,7 +497,7 @@ class compression:
                                             
                                             cvz2=cvz
                                             cvz5=cvz
-                                            print(cvz)
+                                            #print(cvz)
                                             while cvz2>=0:
                                                 
                                                 cvz2=cvz//(virationc-1)
@@ -779,6 +779,7 @@ class compression:
                         sda=szx+sda     
                         lenf=len(sda)
                         szx=""
+                        bits=""
             
                         for byte in sda:
                             aqwer=aqwer+1
@@ -789,6 +790,7 @@ class compression:
                                     
                             if aqwer<=bitc:
                                 qwt=qwt+byte
+                                bits=bits+byte
                             if aqwer==bitc:
                                 qwaw1=""
                                 xx3=xx3+1
@@ -886,7 +888,7 @@ class compression:
                                         
                                         lenf=len(szx)
                                         
-                                        
+                                        wer=wer+szx
                                        
                                         szx=""  
                                         if lenfg==0:
@@ -913,6 +915,8 @@ class compression:
                                 b=-1
                                 kl=blockw
                                 bnkw=kl
+                                print(bnkw)
+                                print(len(bits))
                             
                                 
                                 cb=0        
@@ -947,8 +951,7 @@ class compression:
                                         if ghj==virationc:
                                             raise SystemExit 
                                             
-                                       
-                                        ghjd=(ghj*(virationc-1))**bnkw
+                                        ghjd=(ghj*((virationc-1))**bnkw)
                                         bnkw=bnkw-1
                                         
                                         cvz=cvz+ghjd
@@ -961,7 +964,7 @@ class compression:
                                     #print(szxw3)
                                     
                                     lenf=len(szxw3)
-                                    #print(lenf)
+                                    print(lenf)
                                     
                                     if lenf>blockD:
                                             wer="01111111"+sda
@@ -994,6 +997,7 @@ class compression:
                                        
                                     wer=wer+szx+szxw3
                                     szxw1=""
+                                    bits=""
                                     cvz=0
                                        
                                     lenf=len(szx)
