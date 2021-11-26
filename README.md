@@ -15,7 +15,7 @@ It can compress random files. Program compress not any files sometimes the file 
 
 When compress you need enter options for compress and extract and theare use the algorithm.
 
-Deep 7, 11, 12, 13, 14, 15, 16, 17 and 18.
+Deep 1-9.
 
 Bye, Bye.
 
