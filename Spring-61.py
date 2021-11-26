@@ -138,7 +138,7 @@ class compression:
                                 
                         elif namezD==13:
                                 
-                                blockDR=65010
+                                blockDR=70010
                                 
                         elif namezD==12:
                                 
@@ -664,7 +664,7 @@ class compression:
                                 
                         elif namezD==13:
                                 
-                                blockDR=65010
+                                blockDR=70010
                                 
                         elif namezD==12:
                                 
