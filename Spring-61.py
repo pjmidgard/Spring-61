@@ -138,7 +138,7 @@ class compression:
                                 
                         elif namezD==13:
                                 
-                                blockDR=70010
+                                blockDR=65010
                                 
                         elif namezD==12:
                                 
@@ -657,7 +657,7 @@ class compression:
                                 
                         elif namezD==13:
                                 
-                                blockDR=70010
+                                blockDR=65010
                                 
                         elif namezD==12:
                                 
@@ -1002,8 +1002,8 @@ class compression:
                                     #print(szxw3)
                                     
                                     lenf=len(szxw3)
-                                    #print(lenf)
-                                    #print(blockD)
+                                    print(lenf)
+                                    print(blockD)
                                    
                                     if lenf>blockD:
                                             wer="01111111"+sda
