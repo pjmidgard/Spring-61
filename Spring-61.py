@@ -114,37 +114,6 @@ class compression:
                             namezD=int(nameas[nac-10:nac-8])
                             nameas=nameas[0:nac-10]
 
-
-                        if namezD==9:
-                            namezD=18
-
-                        if namezD==8:
-                            namezD=17
-
-                        if namezD==7:
-                            namezD=16
-
-                        if namezD==6:
-                            namezD=15
-
-                        if namezD==5:
-                            namezD=14
-
-                        if namezD==4:
-                            namezD=13
-
-
-                        if namezD==3:
-                            namezD=12
-
-                        if namezD==2:
-                            namezD=11
-
-
-                        if namezD==1:
-                            namezD=7
-
-                        
                      
                         if namezD==18:
 
