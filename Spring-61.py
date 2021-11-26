@@ -154,7 +154,7 @@ class compression:
                                 blockDR=28
 
                         if namezD!=7:
-                            namezD=namezD-6000
+                            namezD=namezD-8000
 
                         countraz=0
                         C=0
@@ -676,7 +676,7 @@ class compression:
                             raise SystemExit
                         
                         if namezD!=7:
-                            namezD=namezD-6000
+                            namezD=namezD-8000
                             
 
                         x=0
