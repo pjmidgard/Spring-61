@@ -116,33 +116,33 @@ class compression:
 
 
                         if namezD==9:
-                            namezD==18
+                            namezD=18
 
                         if namezD==8:
-                            namezD==17
+                            namezD=17
 
                         if namezD==7:
-                            namezD==16
+                            namezD=16
 
                         if namezD==6:
-                            namezD==15
+                            namezD=15
 
                         if namezD==5:
-                            namezD==14
+                            namezD=14
 
                         if namezD==4:
-                            namezD==13
+                            namezD=13
 
 
                         if namezD==3:
-                            namezD==12
+                            namezD=12
 
                         if namezD==2:
-                            namezD==11
+                            namezD=11
 
 
                         if namezD==1:
-                            namezD==7
+                            namezD=7
 
                         
                      
@@ -631,33 +631,33 @@ class compression:
                         namezD = int(input("Please, enter Deep? "))
 
                         if namezD==9:
-                            namezD==18
+                            namezD=18
 
                         if namezD==8:
-                            namezD==17
+                            namezD=17
 
                         if namezD==7:
-                            namezD==16
+                            namezD=16
 
                         if namezD==6:
-                            namezD==15
+                            namezD=15
 
                         if namezD==5:
-                            namezD==14
+                            namezD=14
 
                         if namezD==4:
-                            namezD==13
+                            namezD=13
 
 
                         if namezD==3:
-                            namezD==12
+                            namezD=12
 
                         if namezD==2:
-                            namezD==11
+                            namezD=11
 
 
                         if namezD==1:
-                            namezD==7
+                            namezD=7
                             
                             
                             
