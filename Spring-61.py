@@ -917,8 +917,7 @@ class compression:
                                 b=-1
                                 kl=blockw
                                 bnkw=kl
-                                print(bnkw)
-                                print(len(bits))
+                                
                             
                                 
                                 cb=0        
@@ -966,7 +965,7 @@ class compression:
                                     #print(szxw3)
                                     
                                     lenf=len(szxw3)
-                                    print(lenf)
+                                    
                                     
                                     if lenf>blockD:
                                             wer="01111111"+sda
