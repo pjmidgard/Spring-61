@@ -1012,8 +1012,8 @@ class compression:
                                     #print(szxw3)
                                     
                                     lenf=len(szxw3)
-                                    print(lenf)
-                                    print(blockD)
+                                    #print(lenf)
+                                    #print(blockD)
                                    
                                     if lenf>blockD:
                                             wer="01111111"+sda
