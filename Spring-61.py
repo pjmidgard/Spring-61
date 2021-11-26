@@ -153,6 +153,9 @@ class compression:
                             
                                 blockDR=28
 
+                        if namezD!=7:
+                            namezD=namezD-6000
+
                         countraz=0
                         C=0
                         s=""
@@ -671,6 +674,9 @@ class compression:
 
                         else:
                             raise SystemExit
+                        
+                        if namezD!=7:
+                            namezD=namezD-6000
                             
 
                         x=0
@@ -996,8 +1002,8 @@ class compression:
                                     #print(szxw3)
                                     
                                     lenf=len(szxw3)
-                                    #print(lenf)
-                                    #print(blockD)
+                                    print(lenf)
+                                    print(blockD)
                                    
                                     if lenf>blockD:
                                             wer="01111111"+sda
