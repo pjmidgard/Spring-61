@@ -676,7 +676,7 @@ class compression:
                             raise SystemExit
                         
                         if namezD!=7:
-                            blockDR=blockDR-180
+                            blockDR=blockDR-1800
                             
 
                         x=0
