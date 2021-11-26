@@ -306,7 +306,10 @@ class compression:
                                 rr12=0
                                 wers=""
                                 countraz=0
+
+
                                 
+                                    
                                 blockD=(blockDR*namezD)
                                 blockDE=(blockDR*namezD)-namezD-1
                                 BlockF=blockDR
@@ -316,6 +319,10 @@ class compression:
                                 blockw=block-1
                                 blockw1=2**namezD
                                 virationc=(2**namezD)-1
+
+                                if namezD==13:
+                                    blockD=(blockDR*namezD)-namezD-2
+                                    blockDE=(blockDR*namezD)-namezD-2
             
                                 with open(nameas, "ab") as f2:
                                     sda=bin(int(binascii.hexlify(data),16))[2:]
@@ -743,7 +750,8 @@ class compression:
                         numberschangenotexist = []
                         numbers = []
 
-
+                        
+                            
                         
                         blockD=(blockDR*namezD)-namezD-1
                         block=blockDR
@@ -751,6 +759,8 @@ class compression:
                         blockw1=2**namezD
                         virationc=(2**namezD)-1
                         bitc=namezD
+                        if namezD==13:
+                            blockD=(blockDR*namezD)-namezD-2
                         a=0
                         qfl=0
                         h=0
