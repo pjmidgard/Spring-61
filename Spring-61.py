@@ -117,19 +117,19 @@ class compression:
                      
                         if namezD==18:
 
-                                blockDR=3125000
+                                blockDR=3025000
 
                         elif namezD==17:
 
-                                blockDR=1685000
+                                blockDR=1585000
 
                         elif namezD==16:
 
-                                blockDR=760100
+                                blockDR=750100
 
                         elif namezD==15:
 
-                                blockDR=380000
+                                blockDR=370000
 
 
                         elif namezD==14:
@@ -138,23 +138,23 @@ class compression:
                                 
                         elif namezD==13:
                                 
-                                blockDR=70010
+                                blockDR=75010
                                 
                         elif namezD==12:
                                 
-                                blockDR=34000
+                                blockDR=37000
 
                         elif namezD==11:
                                 
-                                blockDR=18250
+                                blockDR=17250
 
 
                         elif namezD==7:
                             
                                 blockDR=28
 
-                        if namezD!=7:
-                            blockDR=blockDR-1800
+                      
+                        
 
                         countraz=0
                         C=0
@@ -641,19 +641,19 @@ class compression:
 
                         if namezD==18:
 
-                                blockDR=3125000
+                                blockDR=3025000
 
                         elif namezD==17:
 
-                                blockDR=1685000
+                                blockDR=1585000
 
                         elif namezD==16:
 
-                                blockDR=760100
+                                blockDR=750100
 
                         elif namezD==15:
 
-                                blockDR=380000
+                                blockDR=370000
 
 
                         elif namezD==14:
@@ -662,15 +662,15 @@ class compression:
                                 
                         elif namezD==13:
                                 
-                                blockDR=70010
+                                blockDR=75010
                                 
                         elif namezD==12:
                                 
-                                blockDR=34000
+                                blockDR=37000
 
                         elif namezD==11:
                                 
-                                blockDR=18250
+                                blockDR=17250
 
 
                         elif namezD==7:
@@ -680,8 +680,8 @@ class compression:
                         else:
                             raise SystemExit
                         
-                        if namezD!=7:
-                            blockDR=blockDR-1800
+                      
+                      
                             
 
                         x=0
