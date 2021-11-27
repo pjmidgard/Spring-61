@@ -505,6 +505,7 @@ class compression:
                                             
                                             
                                             #print(cvz)
+                                            cvz2=30000000000000000
                                             while cvz2>virationc-1:
                                                 
                                                 cvz2=cvz//virationc
@@ -1009,8 +1010,8 @@ class compression:
                                     #print(szxw3)
                                     
                                     lenf=len(szxw3)
-                                    #print(lenf)
-                                    #print(blockD)
+                                    print(lenf)
+                                    print(blockD)
                                    
                                     if lenf>blockD:
                                             wer="01111111"+sda
