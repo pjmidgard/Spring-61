@@ -507,9 +507,9 @@ class compression:
                                             #print(cvz)
                                             while cvz2>virationc-1:
                                                 
-                                                cvz2=cvz//(virationc)
+                                                cvz2=cvz//virationc
                                                 
-                                                cvz3=cvz2*(virationc)
+                                                cvz3=cvz2*virationc
                                                 cvz4=str(cvz2)
                                                 
                                                 cvz5=cvz-cvz3
@@ -996,7 +996,7 @@ class compression:
                                         if ghj==virationc:
                                             raise SystemExit 
                                             
-                                        ghjd=(ghj*((virationc))**bnkw)
+                                        ghjd=ghj*(virationc**bnkw)
                                         bnkw=bnkw-1
                                         
                                         cvz=cvz+ghjd
