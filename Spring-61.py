@@ -505,7 +505,7 @@ class compression:
                                             
                                             
                                             #print(cvz)
-                                            cvz2=30000000000000000
+                                            cvz2=cvz
                                             while cvz2>virationc-1:
                                                 
                                                 cvz2=cvz//virationc
@@ -538,7 +538,7 @@ class compression:
                                                         z=z+1
                                                     
                                                     
-                                                wer=wer+szx+szxw3
+                                                wer=szx+szxw3+wer
                                                 
                                             
                                             szxw5=int(cvz2)
@@ -1050,7 +1050,7 @@ class compression:
                                     lenf=len(szx)
                                         
                                     szx=""
-                                 
+                                qwawe=qwaw
                                 qwaw=""
                                 
                                 a=0
@@ -1066,7 +1066,7 @@ class compression:
                                         
                         a=0
             
-                        wer=wer+qwaw
+                        wer=wer+qwawe
                         qwaw=""
             
             
