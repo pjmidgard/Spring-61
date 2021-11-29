@@ -939,6 +939,8 @@ class compression:
                                             while z<xc:
                                                 szx="0"+szx
                                                 z=z+1
+
+                                        takebitdw2=int(szxt, 2)
                                         
                                         
                                         szxw1=""
