@@ -943,7 +943,7 @@ class compression:
                                         
                                         szxw1=""
                                         szxw1=szx
-                                        £print(bitc)
+                                        #print(bitc)
                                         
                                         t=szx+szxt
                                         lenf=len(t)
