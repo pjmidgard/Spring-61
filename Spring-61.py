@@ -470,8 +470,8 @@ class compression:
                                             el=eo
                                             eo=eo+blocky
                                             takebit=sda[el:eo]
-                                            print(len(takebit))
-                                            print(blocky)
+                                            #print(len(takebit))
+                                            #print(blocky)
              
                                             takebitdw=int(takebit, 2)
                                            
