@@ -414,16 +414,16 @@ class compression:
                                         while eo<sdad:
                                             wers=""
                                             
-                                            
+                                            blockDD=blockD-8
                                             el=eo
-                                            eo=eo+blockD
+                                            eo=eo+blockDD
                                             takebitsize=sda[el:eo]
                                             xssd=len(takebitsize)
-                                            el=eo-blockD
-                                            eo=eo-blockD
+                                            el=eo-blockDD
+                                            eo=eo-blockDD
 
                                             
-                                            if xssd<blockD-1:
+                                            if xssd<=blockDD:
                                                 wer=wer+takebitsize
                                                 C=C+xssd
                                                 
