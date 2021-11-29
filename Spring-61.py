@@ -74,12 +74,6 @@ szx=""
 wer=""
 namez = input("c,c2: compress or e,u2: extract? ")
 
-
-
-
-	
-	
-
 f = open("PI_10M.txt", "r")
 PI=f.read()
 
@@ -314,7 +308,7 @@ class compression:
                                 blockDE=(blockDR*namezD)-namezD-1
                                 BlockF=blockDR
                                 namezD2=(2**namezD)-1
-                                
+                                blocky=(blockDR*namezD)-namezD-1
                                 block=blockDR
                                 blockw=block-1
                                 blockw1=2**namezD
@@ -429,10 +423,21 @@ class compression:
                                             eo=eo-blockD
 
                                             
-                                            if xssd<blockDE:
+                                            if xssd<blockD-1:
                                                 wer=wer+takebitsize
                                                 C=C+xssd
-                                                   
+                                                
+                                                lenf=len(wer)
+                                                szx=""
+                                                xc=8-lenf%8
+                                                z=0
+                                                if xc!=0:
+                                                	if xc!=8:
+                                                	  while z<xc:
+                                                	  	szx="0"+szx
+                                                	  	z=z+1
+                                                wer=szx+wer
+                                           
                                                 n = int(wer, 2)
                                         
                                                 qqwslenf=len(wer)
@@ -463,8 +468,10 @@ class compression:
                                             takebitdw2=int(takebit2, 2)
                                             
                                             el=eo
-                                            eo=eo+blockDE
+                                            eo=eo+blocky
                                             takebit=sda[el:eo]
+                                            print(len(takebit))
+                                            print(blocky)
              
                                             takebitdw=int(takebit, 2)
                                            
@@ -483,8 +490,8 @@ class compression:
                                            
 
                                                    
-                                            takebitdw=int(takebit, 2)
-                                            numbertc=takebitdw
+                                            
+                                          
                                                     
                                                     
                                                         
@@ -506,7 +513,7 @@ class compression:
                                             
                                             #print(cvz)
                                             cvz2=cvz
-                                            while cvz2>virationc-1:
+                                            for p in range(blockw+1):
                                                 
                                                 cvz2=cvz//virationc
                                                 
@@ -515,6 +522,7 @@ class compression:
                                                 
                                                 cvz5=cvz-cvz3
                                                 cvz=cvz2
+                                                #print(cvz5)
                                                 
                                                
                                               
@@ -842,6 +850,7 @@ class compression:
                                 qwaw1=""
                                 xx3=xx3+1
                                 aqwq=int(qwt,2)
+                               
                                 qwt=""
                                 a=a+1
                                 h=h+1  
@@ -920,9 +929,11 @@ class compression:
 
                                     else:
                                         xx=1
-                                        szx=bin(notexist)[2:]
-                                        lenf=len(szx)
+                                        szxt=bin(notexist)[2:]
+                                        lenf=len(szxt)
                                        
+                                        szx=""
+                                        xc=bitc-lenf
                                         z=0
                                         if xc!=0 and lenf!=bitc:
                                             while z<xc:
@@ -932,10 +943,13 @@ class compression:
                                         
                                         szxw1=""
                                         szxw1=szx
+                                        £print(bitc)
                                         
-                                        lenf=len(szx)
+                                        t=szx+szxt
+                                        lenf=len(t)
+                                        #print(lenf)
                                         
-                                        wer=wer+szx
+                                        wer=wer+t
                                        
                                         szx=""  
                                         if lenfg==0:
@@ -978,8 +992,8 @@ class compression:
                                     cvz=0
                                     for p in range(blockw+1):
                                         
-                                        if virationc!=byteb:
-                                                byteb=numbers[p]
+                                        if virationc!=aqwq:
+                                                byteb=aqwq
                                                 
                                                 ghj=byteb
                                         if virationc==byteb:
@@ -996,17 +1010,40 @@ class compression:
                                          
                                         if ghj==virationc:
                                             raise SystemExit 
-                                            
+                                        #print(ghj)
                                         ghjd=ghj*(virationc**bnkw)
+                                          
+                                      
                                         bnkw=bnkw-1
                                         
                                         cvz=cvz+ghjd
+                                       
+                                    
+                                        
                                         
                                     szxw2=""
                                     cvz2=cvz
                                     cvz5=cvz
-                                    
                                     szxw3=bin(cvz)[2:]
+                                    for p in range(blockw+1):
+                                                
+                                                cvz2=cvz//virationc
+                                                
+                                                cvz3=cvz2*virationc
+                                                cvz4=str(cvz2)
+                                                
+                                                cvz5=cvz-cvz3
+                                                cvz=cvz2
+                                                #print(cvz5)
+                                                
+                                               
+                                              
+                                                szxw2=szxw2+cvz4
+                                                
+                                                if takebitdw2==cvz5:
+                                                        cvz5=namezD2
+                                    
+                                  
                                     #print(szxw3)
                                     
                                     lenf=len(szxw3)
@@ -1041,8 +1078,10 @@ class compression:
                                                 szx="0"+szx
                                                 z=z+1
                                         
-                                       
-                                    wer=wer+szx+szxw3
+                                    r=szx+szxw3
+                                    #print(len(r))
+                                    #print(blockD)
+                                    wer=wer+r
                                     szxw1=""
                                     bits=""
                                     cvz=0
@@ -1066,7 +1105,7 @@ class compression:
                                         
                         a=0
             
-                        wer=wer+qwawe
+                        wer=wer+qwaw
                         qwaw=""
             
             
