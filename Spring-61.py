@@ -128,7 +128,7 @@ class compression:
 
                         elif namezD==14:
 
-                                blockDR=158500
+                                blockDR=168500
                                 
                         elif namezD==13:
                                 
@@ -669,7 +669,7 @@ class compression:
 
                         elif namezD==14:
 
-                                blockDR=158500
+                                blockDR=168500
                                 
                         elif namezD==13:
                                 
@@ -1029,6 +1029,8 @@ class compression:
                                     cvz2=cvz
                                     cvz5=cvz
                                     szxw3=bin(cvz)[2:]
+                                    lenf=len(szxw3)
+                                    #print(lenf)
                                     for p in range(blockw+1):
                                                 
                                                 cvz2=cvz//virationc
