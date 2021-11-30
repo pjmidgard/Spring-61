@@ -363,50 +363,49 @@ class compression:
                                             x3 = x2-x
                                             return print(x3)
 
-                                        if sda[0:1]=="1":
-                                            sda=sda[1:]
-                                        elif sda[0:2]=="01":
-                                            sda=sda[2:]
-                                        elif sda[0:3]=="001":
-                                            sda=sda[3:]
-                                        elif sda[0:4]=="0001":
-                                            sda=sda[4:]
-                                        elif sda[0:5]=="00001":
-                                            sda=sda[5:]
+                                    
+                                           
+                                        g=1
+                                        lenf5=len(sda)
+
+                                        if g==1:
+
+                                            if sda[lenf5-8:lenf5]=="10000000":
+
+                                                sda=sda[1:lenf5-8]
+
+                                            elif sda[lenf5-7:lenf5]=="1000000":
+
+                                                sda=sda[1:lenf5-7]
+
+                                            elif sda[lenf5-6:lenf5]=="100000":
+
+                                                sda=sda[1:lenf5-6]
+
+                                            elif sda[lenf5-5:lenf5]=="10000":
+
+                                                sda=sda[1:lenf5-5]
+
+
+                                            elif sda[lenf5-4:lenf5]=="1000":
+
+                                                sda=sda[1:lenf5-4]
+
+                                            elif sda[lenf5-3:lenf5]=="100":
+
+                                                sda=sda[1:lenf5-3]
+
+                                            elif sda[lenf5-2:lenf5]=="10":
+
+                                                sda=sda[1:lenf5-2]
+
+                                            elif sda[lenf5-1:lenf5]=="1":
+
+                                                sda=sda[1:lenf5-1]
             
-                                        elif sda[0:6]=="000001":
-                                            sda=sda[6:]
-                                        elif sda[0:7]=="0000001":
-                                            sda=sda[7:]
-            
-                                        elif sda[0:8]=="00000001":
-                                            sda=sda[8:]
-            
-                                            
-                                        sdalong=len(sda)
-            
-                                        
-                                        if sda[sdalong-1:sdalong]=="1":
-                                            sda=sda[:sdalong-1]
-                                        elif sda[sdalong-2:sdalong]=="10":
-                                            sda=sda[:sdalong-2]
-                                        elif sda[sdalong-3:sdalong]=="100":
-                                            sda=sda[:sdalong-3]
-                                        elif sda[sdalong-4:sdalong]=="1000":
-                                            sda=sda[:sdalong-4]
-                                        elif sda[sdalong-5:sdalong]=="10000":
-                                            sda=sda[:sdalong-5]
-                                        elif sda[sdalong-6:sdalong]=="100000":
-                                            sda=sda[:sdalong-6]
-            
-                                        elif sda[sdalong-7:sdalong]=="1000000":
-                                            sda=sda[:sdalong-7]
-            
-                                        elif sda[sdalong-8:sdalong]=="10000000":
-                                            sda=sda[:sdalong-8]
-            
-                                            
+                                        g=0    
                                         sdad=len(sda)
+                                        #print(sda)
                                         
                                         eo=0
                                         el=0
@@ -425,6 +424,7 @@ class compression:
                                             
                                             if xssd<blockDD-1:
                                                 wer=wer+takebitsize
+                                                L=len(wer)
                                                 C=C+xssd
                                                 
                                                 lenf=len(wer)
@@ -436,8 +436,9 @@ class compression:
                                                 	  while z<xc:
                                                 	  	szx="0"+szx
                                                 	  	z=z+1
+                                                
+                                                
                                                 wer=szx+wer
-                                           
                                                 n = int(wer, 2)
                                         
                                                 qqwslenf=len(wer)
@@ -466,6 +467,7 @@ class compression:
                                             eo=eo+namezD
                                             takebit2=sda[el:eo]
                                             takebitdw2=int(takebit2, 2)
+                                            
                                             
                                             el=eo
                                             eo=eo+blocky
@@ -545,7 +547,7 @@ class compression:
                                                         szx="0"+szx
                                                         z=z+1
                                                     
-                                                    
+                                                
                                                 wer=szx+szxw3+wer
                                                 
                                             
@@ -567,7 +569,7 @@ class compression:
                                                 takebit=wers[eo1:el1]
                                                 C=el1
                                                     
-                                                wer=wer+takebit
+                                                #wer=wer+takebit
                                                 sw=sw+1
                                                    
                                             wers=""
@@ -994,8 +996,8 @@ class compression:
                                     cvz=0
                                     for p in range(blockw+1):
                                         
-                                        if virationc!=aqwq:
-                                                byteb=aqwq
+                                        if virationc!=byteb:
+                                                byteb=numbers[p]
                                                 
                                                 ghj=byteb
                                         if virationc==byteb:
@@ -1336,6 +1338,7 @@ class compression:
 
                                     sda3=sda2
                                     lenf6=len(sda3)
+                                    
                                     sda4=""
                                     sda5=""
                                     sda6=""
@@ -1371,7 +1374,7 @@ class compression:
                                             sda2=sda2[1:lenf5-5]
 
 
-                                        elif sda2[lenf5-4:lenf5]=="10000":
+                                        elif sda2[lenf5-4:lenf5]=="1000":
 
                                             sda2=sda2[1:lenf5-4]
 
