@@ -96,11 +96,11 @@ class compression:
                         blockw1=4
                         nameas=name
                         nac=len(nameas)
-                        if nameas[nac-10:nac]=="17.bin.bin":
+                        if nameas[nac-10:nac]=="18.bin.bin":
                             namezD=int(nameas[nac-10:nac-8])
                             nameas=nameas[0:nac-10]
 
-                        elif nameas[nac-9:nac]=="7.bin.bin" and nameas[nac-10:nac]!="17.bin.bin":
+                        elif nameas[nac-9:nac]=="8.bin.bin" and nameas[nac-10:nac]!="18.bin.bin":
                             namezD=int(nameas[nac-9:nac-8])
                             nameas=nameas[0:nac-9]
 
@@ -143,9 +143,9 @@ class compression:
                                 blockDR=17250
 
 
-                        elif namezD==7:
+                        elif namezD==8:
                             
-                                blockDR=700
+                                blockDR=3000
 
                       
                         
@@ -532,7 +532,7 @@ class compression:
                                                 
                                                 if takebitdw2==cvz5:
                                                         cvz5=namezD2
-                                                
+                                                        
                                                 
                                                 szxw3=bin(cvz5)[2:]
                                                 lenf=len(szxw3)
@@ -645,7 +645,7 @@ class compression:
 
 
                         if namezD==1:
-                            namezD=7
+                            namezD=8
                             
                             
                             
@@ -684,9 +684,9 @@ class compression:
                                 blockDR=17250
 
 
-                        elif namezD==7:
+                        elif namezD==8:
                             
-                                blockDR=700
+                                blockDR=3000
 
                         else:
                             raise SystemExit
@@ -1030,7 +1030,6 @@ class compression:
                                     cvz5=cvz
                                     szxw3=bin(cvz)[2:]
                                     lenf=len(szxw3)
-                                    #print(lenf)
                                     
                                     
                                     lenf=len(szxw3)
