@@ -1031,26 +1031,7 @@ class compression:
                                     szxw3=bin(cvz)[2:]
                                     lenf=len(szxw3)
                                     #print(lenf)
-                                    for p in range(blockw+1):
-                                                
-                                                cvz2=cvz//virationc
-                                                
-                                                cvz3=cvz2*virationc
-                                                cvz4=str(cvz2)
-                                                
-                                                cvz5=cvz-cvz3
-                                                cvz=cvz2
-                                                #print(cvz5)
-                                                
-                                               
-                                              
-                                                szxw2=szxw2+cvz4
-                                                
-                                                if takebitdw2==cvz5:
-                                                        cvz5=namezD2
                                     
-                                  
-                                    #print(szxw3)
                                     
                                     lenf=len(szxw3)
                                     #print(lenf)
